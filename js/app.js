@@ -2,6 +2,7 @@
  * Main application controller for Jira Epic Analyzer
  * With improved error handling and data validation
  * Enhanced with hierarchical data processing support
+ * Added demo data functionality
  */
 
 class JiraEpicAnalyzer {
@@ -22,6 +23,11 @@ class JiraEpicAnalyzer {
     // Set up analyze button click handler
     document.getElementById('analyzeBtn').addEventListener('click', async () => {
       await this.analyzeData();
+    });
+    
+    // Set up demo data button click handler
+    document.getElementById('demoDataBtn').addEventListener('click', async () => {
+      await this.loadDemoData();
     });
     
     // Set up reset button handler (delegating to UI controller)
@@ -198,6 +204,144 @@ class JiraEpicAnalyzer {
   }
   
   /**
+   * Load and process demo data from the sampledata folder
+   */
+  async loadDemoData() {
+    // Clear previous errors and show loading
+    ErrorHandler.clear();
+    Utils.showLoading();
+    
+    try {
+      // Show info message about processing
+      ErrorHandler.handle(
+        "Loading demo data from sample files...", 
+        '', true, 'info'
+      );
+      
+      // Fetch the demo CSV files from the sampledata folder
+      const mainFileUrl = 'sampledata/Epicanalyzer_Export_AllFields_Obfuscated.csv';
+      const timeFileUrl = 'sampledata/Epicanalyzer_TimeInStatus_Obfuscated.csv';
+      
+      let mainResponse, timeResponse;
+      
+      try {
+        mainResponse = await fetch(mainFileUrl);
+        if (!mainResponse.ok) {
+          throw new Error(`Failed to load main demo file: ${mainResponse.statusText}`);
+        }
+      } catch (error) {
+        throw new Error(`Error fetching main demo file: ${error.message}`);
+      }
+      
+      try {
+        timeResponse = await fetch(timeFileUrl);
+        if (!timeResponse.ok) {
+          throw new Error(`Failed to load time demo file: ${timeResponse.statusText}`);
+        }
+      } catch (error) {
+        ErrorHandler.handle(
+          `Error fetching time demo file: ${error.message}. Continuing without time information.`,
+          'Demo Data Warning', true, 'warning'
+        );
+        timeResponse = null;
+      }
+      
+      // Get the text content from the responses
+      const mainCsvText = await mainResponse.text();
+      const timeCsvText = timeResponse ? await timeResponse.text() : null;
+      
+      // Parse the CSV text
+      let mainData, timeData;
+      
+      try {
+        mainData = CSVParser.parseText(mainCsvText);
+        ErrorHandler.clear(); // Clear info message if successful
+        console.log(`Parsed main demo CSV: ${mainData.headers.length} columns, ${mainData.records.length} rows`);
+      } catch (error) {
+        throw new Error(ErrorHandler.formatCSVError(error, 'Epicanalyzer_Export_AllFields_Obfuscated.csv'));
+      }
+      
+      if (timeCsvText) {
+        try {
+          timeData = CSVParser.parseText(timeCsvText);
+        } catch (error) {
+          ErrorHandler.handle(
+            ErrorHandler.formatCSVError(error, 'Epicanalyzer_TimeInStatus_Obfuscated.csv'),
+            'Time CSV Parse Error', true, 'warning'
+          );
+          timeData = null;
+        }
+      }
+      
+      // Validate and store the parsed data
+      this.validateData(mainData);
+      
+      // Store data for potential reanalysis
+      this.mainData = mainData;
+      this.timeData = timeData;
+      
+      // Update UI to show the file names
+      document.getElementById('mainFileName').textContent = 'Epicanalyzer_Export_AllFields_Obfuscated.csv';
+      document.getElementById('timeFileName').textContent = timeData ? 'Epicanalyzer_TimeInStatus_Obfuscated.csv' : 'No file selected';
+      
+      // Process and display data
+      const processedData = DataProcessor.processMainCSV(mainData);
+      if (!processedData || !processedData.epics) {
+        throw new Error('Failed to process demo epic data. Invalid data structure returned.');
+      }
+      
+      const { epics, childIssues } = processedData;
+      this.childIssuesData = childIssues;
+      
+      // Display warning if no epics found
+      if (!epics || epics.length === 0) {
+        ErrorHandler.handle(
+          'No epics found in the demo CSV file.',
+          '', true, 'warning'
+        );
+        Utils.hideLoading();
+        return;
+      }
+      
+      // Process time data if available
+      let timeMap = new Map();
+      try {
+        if (timeData) {
+          timeMap = DataProcessor.processTimeCSV(timeData);
+        }
+      } catch (error) {
+        ErrorHandler.handle(
+          `Error processing demo time data: ${error.message}. Continuing without time information.`,
+          'Time Data Warning', true, 'warning'
+        );
+      }
+      
+      // Merge and analyze data
+      const mergedEpics = DataProcessor.mergeEpicData(epics, timeMap);
+      const metrics = DataProcessor.calculateMetrics(mergedEpics);
+      
+      // Store epics data for reanalysis
+      this.epicsData = mergedEpics;
+      
+      // Display results
+      this.uiController.displayResults(mergedEpics, metrics);
+      
+      // Show success message with counts
+      const childIssuesCount = childIssues ? childIssues.length : 0;
+      ErrorHandler.handle(
+        `Successfully loaded demo data with ${epics.length} epics and ${childIssuesCount} child issues.`,
+        '', true, 'info'
+      );
+      
+    } catch (error) {
+      ErrorHandler.handle(error, 'Demo Data Error');
+      console.error('Demo data error:', error);
+    } finally {
+      Utils.hideLoading();
+    }
+  }
+  
+  /**
    * Validate parsed CSV data
    * @param {Object} data - Parsed CSV data
    * @throws {Error} - If data is invalid
@@ -295,6 +439,44 @@ class JiraEpicAnalyzer {
     }
   }
 }
+
+// Add the CSV text parsing method to the CSVParser class
+// This code assumes the CSVParser class exists and uses PapaParse
+
+/**
+ * Add this method to your existing CSVParser class
+ * Parse CSV text directly
+ * @param {string} csvText - The CSV text content
+ * @returns {Object} - Object with headers and records
+ */
+CSVParser.parseText = function(csvText) {
+  return new Promise((resolve, reject) => {
+    try {
+      // Create a CSV parser
+      Papa.parse(csvText, {
+        header: true,
+        skipEmptyLines: true,
+        complete: (results) => {
+          // Extract headers from the results meta
+          const headers = results.meta.fields || [];
+          
+          // Extract records from the results data
+          const records = results.data || [];
+          
+          resolve({
+            headers,
+            records
+          });
+        },
+        error: (error) => {
+          reject(new Error(`CSV parsing error: ${error.message}`));
+        }
+      });
+    } catch (error) {
+      reject(new Error(`CSV parsing failed: ${error.message}`));
+    }
+  });
+};
 
 // Initialize the application when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
