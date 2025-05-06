@@ -2,7 +2,7 @@
  * Main application controller for Jira Epic Analyzer
  * With improved error handling and data validation
  * Enhanced with hierarchical data processing support
- * Added demo data functionality
+ * Added embedded demo data functionality
  */
 
 class JiraEpicAnalyzer {
@@ -26,8 +26,8 @@ class JiraEpicAnalyzer {
     });
     
     // Set up demo data button click handler
-    document.getElementById('demoDataBtn').addEventListener('click', async () => {
-      await this.loadDemoData();
+    document.getElementById('demoDataBtn').addEventListener('click', () => {
+      this.loadDemoData();
     });
     
     // Set up reset button handler (delegating to UI controller)
@@ -204,9 +204,9 @@ class JiraEpicAnalyzer {
   }
   
   /**
-   * Load and process demo data from the sampledata folder
+   * Load and process demo data directly from embedded data
    */
-  async loadDemoData() {
+  loadDemoData() {
     // Clear previous errors and show loading
     ErrorHandler.clear();
     Utils.showLoading();
@@ -214,64 +214,13 @@ class JiraEpicAnalyzer {
     try {
       // Show info message about processing
       ErrorHandler.handle(
-        "Loading demo data from sample files...", 
+        "Loading demo data...", 
         '', true, 'info'
       );
       
-      // Fetch the demo CSV files from the sampledata folder
-      const mainFileUrl = 'sampledata/Epicanalyzer_Export_AllFields_Obfuscated.csv';
-      const timeFileUrl = 'sampledata/Epicanalyzer_TimeInStatus_Obfuscated.csv';
-      
-      let mainResponse, timeResponse;
-      
-      try {
-        mainResponse = await fetch(mainFileUrl);
-        if (!mainResponse.ok) {
-          throw new Error(`Failed to load main demo file: ${mainResponse.statusText}`);
-        }
-      } catch (error) {
-        throw new Error(`Error fetching main demo file: ${error.message}`);
-      }
-      
-      try {
-        timeResponse = await fetch(timeFileUrl);
-        if (!timeResponse.ok) {
-          throw new Error(`Failed to load time demo file: ${timeResponse.statusText}`);
-        }
-      } catch (error) {
-        ErrorHandler.handle(
-          `Error fetching time demo file: ${error.message}. Continuing without time information.`,
-          'Demo Data Warning', true, 'warning'
-        );
-        timeResponse = null;
-      }
-      
-      // Get the text content from the responses
-      const mainCsvText = await mainResponse.text();
-      const timeCsvText = timeResponse ? await timeResponse.text() : null;
-      
-      // Parse the CSV text
-      let mainData, timeData;
-      
-      try {
-        mainData = CSVParser.parseText(mainCsvText);
-        ErrorHandler.clear(); // Clear info message if successful
-        console.log(`Parsed main demo CSV: ${mainData.headers.length} columns, ${mainData.records.length} rows`);
-      } catch (error) {
-        throw new Error(ErrorHandler.formatCSVError(error, 'Epicanalyzer_Export_AllFields_Obfuscated.csv'));
-      }
-      
-      if (timeCsvText) {
-        try {
-          timeData = CSVParser.parseText(timeCsvText);
-        } catch (error) {
-          ErrorHandler.handle(
-            ErrorHandler.formatCSVError(error, 'Epicanalyzer_TimeInStatus_Obfuscated.csv'),
-            'Time CSV Parse Error', true, 'warning'
-          );
-          timeData = null;
-        }
-      }
+      // Create demo data directly
+      const mainData = this.createDemoMainData();
+      const timeData = this.createDemoTimeData();
       
       // Validate and store the parsed data
       this.validateData(mainData);
@@ -281,8 +230,8 @@ class JiraEpicAnalyzer {
       this.timeData = timeData;
       
       // Update UI to show the file names
-      document.getElementById('mainFileName').textContent = 'Epicanalyzer_Export_AllFields_Obfuscated.csv';
-      document.getElementById('timeFileName').textContent = timeData ? 'Epicanalyzer_TimeInStatus_Obfuscated.csv' : 'No file selected';
+      document.getElementById('mainFileName').textContent = 'Demo Epic Data (embedded)';
+      document.getElementById('timeFileName').textContent = 'Demo Time Data (embedded)';
       
       // Process and display data
       const processedData = DataProcessor.processMainCSV(mainData);
@@ -296,7 +245,7 @@ class JiraEpicAnalyzer {
       // Display warning if no epics found
       if (!epics || epics.length === 0) {
         ErrorHandler.handle(
-          'No epics found in the demo CSV file.',
+          'No epics found in the demo data.',
           '', true, 'warning'
         );
         Utils.hideLoading();
@@ -339,6 +288,340 @@ class JiraEpicAnalyzer {
     } finally {
       Utils.hideLoading();
     }
+  }
+  
+  /**
+   * Creates demo data for main Jira export directly as an object
+   * @returns {Object} - Object with headers and records
+   */
+  createDemoMainData() {
+    // Define the headers
+    const headers = [
+      'Key', 'Summary', 'Issue Type', 'Status', 'Epic Link', 'Parent', 
+      'Story Points', 'Sprint', 'Components', 'Time in Status (days)'
+    ];
+    
+    // Define the records
+    const records = [
+      {
+        'Key': 'EPIC-100',
+        'Summary': 'Customer Dashboard Redesign',
+        'Issue Type': 'Epic',
+        'Status': 'In Progress',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 5',
+        'Components': 'Frontend',
+        'Time in Status (days)': '15'
+      },
+      {
+        'Key': 'EPIC-101',
+        'Summary': 'API Gateway Implementation',
+        'Issue Type': 'Epic',
+        'Status': 'Ready to Develop',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 6',
+        'Components': 'Backend',
+        'Time in Status (days)': '5'
+      },
+      {
+        'Key': 'EPIC-102',
+        'Summary': 'Mobile App Authentication',
+        'Issue Type': 'Epic',
+        'Status': 'Researching',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 5',
+        'Components': 'Security',
+        'Time in Status (days)': '8'
+      },
+      {
+        'Key': 'EPIC-103',
+        'Summary': 'Analytics Dashboard',
+        'Issue Type': 'Epic',
+        'Status': 'To Do',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 7',
+        'Components': 'Analytics',
+        'Time in Status (days)': '2'
+      },
+      {
+        'Key': 'EPIC-104',
+        'Summary': 'Payment Processing Integration',
+        'Issue Type': 'Epic',
+        'Status': 'Released',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 4',
+        'Components': 'Payments',
+        'Time in Status (days)': '45'
+      },
+      {
+        'Key': 'EPIC-105',
+        'Summary': 'User Profile Management',
+        'Issue Type': 'Epic',
+        'Status': 'Ready for Story Refinement',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 6',
+        'Components': 'User Management',
+        'Time in Status (days)': '12'
+      },
+      {
+        'Key': 'EPIC-106',
+        'Summary': 'Search Functionality Improvement',
+        'Issue Type': 'Epic',
+        'Status': 'Paused',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 7',
+        'Components': 'Search',
+        'Time in Status (days)': '20'
+      },
+      {
+        'Key': 'EPIC-107',
+        'Summary': 'Notification System',
+        'Issue Type': 'Epic',
+        'Status': 'Enabled',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 5',
+        'Components': 'Communications',
+        'Time in Status (days)': '7'
+      },
+      {
+        'Key': 'EPIC-108',
+        'Summary': 'Performance Optimization',
+        'Issue Type': 'Epic',
+        'Status': 'Will not implement',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 6',
+        'Components': 'Infrastructure',
+        'Time in Status (days)': '0'
+      },
+      {
+        'Key': 'EPIC-109',
+        'Summary': 'Data Migration Tools',
+        'Issue Type': 'Epic',
+        'Status': 'In Progress',
+        'Epic Link': '',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 7',
+        'Components': 'Data',
+        'Time in Status (days)': '10'
+      },
+      {
+        'Key': 'TASK-201',
+        'Summary': 'Create UI wireframes',
+        'Issue Type': 'Task',
+        'Status': 'Done',
+        'Epic Link': 'EPIC-100',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 5',
+        'Components': 'Frontend',
+        'Time in Status (days)': '5'
+      },
+      {
+        'Key': 'TASK-202',
+        'Summary': 'Implement dashboard widgets',
+        'Issue Type': 'Task',
+        'Status': 'In Progress',
+        'Epic Link': 'EPIC-100',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 5',
+        'Components': 'Frontend',
+        'Time in Status (days)': '3'
+      },
+      {
+        'Key': 'TASK-203',
+        'Summary': 'Design RESTful API endpoints',
+        'Issue Type': 'Task',
+        'Status': 'Done',
+        'Epic Link': 'EPIC-101',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 6',
+        'Components': 'Backend',
+        'Time in Status (days)': '4'
+      },
+      {
+        'Key': 'TASK-204',
+        'Summary': 'Implement rate limiting',
+        'Issue Type': 'Task',
+        'Status': 'To Do',
+        'Epic Link': 'EPIC-101',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 6',
+        'Components': 'Backend',
+        'Time in Status (days)': '0'
+      },
+      {
+        'Key': 'TASK-205',
+        'Summary': 'Implement OAuth flow',
+        'Issue Type': 'Task',
+        'Status': 'In Progress',
+        'Epic Link': 'EPIC-102',
+        'Parent': '',
+        'Story Points': '',
+        'Sprint': 'Sprint 5',
+        'Components': 'Security',
+        'Time in Status (days)': '6'
+      }
+    ];
+    
+    return { headers, records };
+  }
+  
+  /**
+   * Creates demo time data directly as an object
+   * @returns {Object} - Object with headers and records
+   */
+  createDemoTimeData() {
+    // Define the headers
+    const headers = [
+      'Key', 'Status', 'Started', 'Ended', 'Duration (days)'
+    ];
+    
+    // Define the records
+    const records = [
+      {
+        'Key': 'EPIC-100',
+        'Status': 'To Do',
+        'Started': '2025-01-01',
+        'Ended': '2025-01-10',
+        'Duration (days)': '10'
+      },
+      {
+        'Key': 'EPIC-100',
+        'Status': 'Researching',
+        'Started': '2025-01-11',
+        'Ended': '2025-01-20',
+        'Duration (days)': '10'
+      },
+      {
+        'Key': 'EPIC-100',
+        'Status': 'In Progress',
+        'Started': '2025-01-21',
+        'Ended': '',
+        'Duration (days)': '15'
+      },
+      {
+        'Key': 'EPIC-101',
+        'Status': 'To Do',
+        'Started': '2025-01-05',
+        'Ended': '2025-01-10',
+        'Duration (days)': '5'
+      },
+      {
+        'Key': 'EPIC-101',
+        'Status': 'Ready to Develop',
+        'Started': '2025-01-11',
+        'Ended': '',
+        'Duration (days)': '5'
+      },
+      {
+        'Key': 'EPIC-102',
+        'Status': 'To Do',
+        'Started': '2025-01-03',
+        'Ended': '2025-01-08',
+        'Duration (days)': '5'
+      },
+      {
+        'Key': 'EPIC-102',
+        'Status': 'Researching',
+        'Started': '2025-01-09',
+        'Ended': '',
+        'Duration (days)': '8'
+      },
+      {
+        'Key': 'EPIC-103',
+        'Status': 'To Do',
+        'Started': '2025-01-15',
+        'Ended': '',
+        'Duration (days)': '2'
+      },
+      {
+        'Key': 'EPIC-104',
+        'Status': 'To Do',
+        'Started': '2025-01-01',
+        'Ended': '2025-01-05',
+        'Duration (days)': '5'
+      },
+      {
+        'Key': 'EPIC-104',
+        'Status': 'Researching',
+        'Started': '2025-01-06',
+        'Ended': '2025-01-10',
+        'Duration (days)': '5'
+      },
+      {
+        'Key': 'EPIC-104',
+        'Status': 'Ready for Story Refinement',
+        'Started': '2025-01-11',
+        'Ended': '2025-01-15',
+        'Duration (days)': '5'
+      },
+      {
+        'Key': 'EPIC-104',
+        'Status': 'Ready to Develop',
+        'Started': '2025-01-16',
+        'Ended': '2025-01-25',
+        'Duration (days)': '10'
+      },
+      {
+        'Key': 'EPIC-104',
+        'Status': 'In Progress',
+        'Started': '2025-01-26',
+        'Ended': '2025-02-10',
+        'Duration (days)': '15'
+      },
+      {
+        'Key': 'EPIC-104',
+        'Status': 'Released',
+        'Started': '2025-02-11',
+        'Ended': '',
+        'Duration (days)': '45'
+      },
+      {
+        'Key': 'EPIC-105',
+        'Status': 'To Do',
+        'Started': '2025-01-08',
+        'Ended': '2025-01-15',
+        'Duration (days)': '8'
+      },
+      {
+        'Key': 'EPIC-105',
+        'Status': 'Researching',
+        'Started': '2025-01-16',
+        'Ended': '2025-01-25',
+        'Duration (days)': '10'
+      },
+      {
+        'Key': 'EPIC-105',
+        'Status': 'Ready for Story Refinement',
+        'Started': '2025-01-26',
+        'Ended': '',
+        'Duration (days)': '12'
+      }
+    ];
+    
+    return { headers, records };
   }
   
   /**
@@ -439,44 +722,6 @@ class JiraEpicAnalyzer {
     }
   }
 }
-
-// Add the CSV text parsing method to the CSVParser class
-// This code assumes the CSVParser class exists and uses PapaParse
-
-/**
- * Add this method to your existing CSVParser class
- * Parse CSV text directly
- * @param {string} csvText - The CSV text content
- * @returns {Object} - Object with headers and records
- */
-CSVParser.parseText = function(csvText) {
-  return new Promise((resolve, reject) => {
-    try {
-      // Create a CSV parser
-      Papa.parse(csvText, {
-        header: true,
-        skipEmptyLines: true,
-        complete: (results) => {
-          // Extract headers from the results meta
-          const headers = results.meta.fields || [];
-          
-          // Extract records from the results data
-          const records = results.data || [];
-          
-          resolve({
-            headers,
-            records
-          });
-        },
-        error: (error) => {
-          reject(new Error(`CSV parsing error: ${error.message}`));
-        }
-      });
-    } catch (error) {
-      reject(new Error(`CSV parsing failed: ${error.message}`));
-    }
-  });
-};
 
 // Initialize the application when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
