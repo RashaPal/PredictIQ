@@ -721,6 +721,201 @@ class JiraEpicAnalyzer {
       console.error('Reanalysis error:', error);
     }
   }
+
+  /**
+ * Load and process demo data from the repository
+ */
+async loadDemoData() {
+  // Clear previous errors and show loading
+  ErrorHandler.clear();
+  Utils.showLoading();
+  
+  try {
+    // Show info message about processing
+    ErrorHandler.handle(
+      "Loading demo data from sample files...", 
+      '', true, 'info'
+    );
+    
+    // Instead of fetching from absolute paths, use relative paths
+    const mainFileUrl = './sampledata/Epicanalyzer_Export_AllFields_Obfuscated.csv';
+    const timeFileUrl = './sampledata/Epicanalyzer_TimeInStatus_Obfuscated.csv';
+    
+    let mainResponse, timeResponse;
+    
+    try {
+      // Use XMLHttpRequest instead of fetch for better compatibility
+      mainResponse = await this.loadFileWithXHR(mainFileUrl);
+      if (!mainResponse) {
+        throw new Error('Failed to load main demo file');
+      }
+    } catch (error) {
+      throw new Error(`Error fetching main demo file: ${error.message}`);
+    }
+    
+    try {
+      timeResponse = await this.loadFileWithXHR(timeFileUrl);
+      if (!timeResponse) {
+        throw new Error('Failed to load time demo file');
+      }
+    } catch (error) {
+      ErrorHandler.handle(
+        `Error fetching time demo file: ${error.message}. Continuing without time information.`,
+        'Demo Data Warning', true, 'warning'
+      );
+      timeResponse = null;
+    }
+    
+    // Create File objects from the loaded content
+    const mainFileBlob = new Blob([mainResponse], { type: 'text/csv' });
+    const mainFile = new File([mainFileBlob], "Epicanalyzer_Export_AllFields_Obfuscated.csv", { type: 'text/csv' });
+    
+    let timeFile = null;
+    if (timeResponse) {
+      const timeFileBlob = new Blob([timeResponse], { type: 'text/csv' });
+      timeFile = new File([timeFileBlob], "Epicanalyzer_TimeInStatus_Obfuscated.csv", { type: 'text/csv' });
+    }
+    
+    // Update UI to show the file names
+    document.getElementById('mainFileName').textContent = mainFile.name;
+    document.getElementById('timeFileName').textContent = timeFile ? timeFile.name : 'No file selected';
+    
+    // Now we use the same analysis path as for uploaded files
+    
+    // Parse the files using the same CSVParser
+    let mainData, timeData;
+    
+    try {
+      mainData = await CSVParser.parseFile(mainFile);
+      ErrorHandler.clear();
+      console.log(`Parsed main CSV: ${mainData.headers.length} columns, ${mainData.records.length} rows`);
+    } catch (error) {
+      throw new Error(ErrorHandler.formatCSVError(error, mainFile.name));
+    }
+    
+    if (timeFile) {
+      try {
+        timeData = await CSVParser.parseFile(timeFile);
+      } catch (error) {
+        ErrorHandler.handle(
+          ErrorHandler.formatCSVError(error, timeFile.name),
+          'Time CSV Parse Error', true, 'warning'
+        );
+        timeData = null;
+      }
+    } else {
+      timeData = null;
+    }
+    
+    // Validate parsed data
+    this.validateData(mainData);
+    
+    // Store data for potential reanalysis
+    this.mainData = mainData;
+    this.timeData = timeData;
+    
+    // Process CSV data with hierarchical support
+    const processedData = DataProcessor.processMainCSV(mainData);
+    
+    // Check if the returned data has the expected format
+    if (!processedData || !processedData.epics) {
+      throw new Error('Failed to process epic data. Invalid data structure returned.');
+    }
+    
+    const { epics, childIssues } = processedData;
+    
+    // Store child issues data
+    this.childIssuesData = childIssues;
+    
+    // Display warning if no epics found
+    if (!epics || epics.length === 0) {
+      ErrorHandler.handle(
+        'No epics found in the demo file.',
+        '', true, 'warning'
+      );
+      Utils.hideLoading();
+      return;
+    }
+    
+    // Process time data if available
+    let timeMap = new Map();
+    try {
+      if (timeData) {
+        timeMap = DataProcessor.processTimeCSV(timeData);
+      }
+    } catch (error) {
+      ErrorHandler.handle(
+        `Error processing time data: ${error.message}. Continuing without time information.`,
+        'Time Data Warning', true, 'warning'
+      );
+    }
+    
+    // Merge and analyze data
+    let mergedEpics, metrics;
+    try {
+      mergedEpics = DataProcessor.mergeEpicData(epics, timeMap);
+      
+      if (!mergedEpics || mergedEpics.length === 0) {
+        throw new Error('Failed to merge epic data. No epics were returned.');
+      }
+      
+      metrics = DataProcessor.calculateMetrics(mergedEpics);
+      
+      if (!metrics || !metrics.overall) {
+        throw new Error('Failed to calculate metrics. Invalid metrics structure returned.');
+      }
+    } catch (error) {
+      throw new Error(`Error analyzing data: ${error.message}`);
+    }
+    
+    // Store epics data for reanalysis
+    this.epicsData = mergedEpics;
+    
+    // Display results
+    this.uiController.displayResults(mergedEpics, metrics);
+    
+    // Show success message with counts
+    const childIssuesCount = childIssues ? childIssues.length : 0;
+    ErrorHandler.handle(
+      `Successfully loaded demo data with ${epics.length} epics and ${childIssuesCount} child issues.`,
+      '', true, 'info'
+    );
+    
+  } catch (error) {
+    ErrorHandler.handle(error, 'Demo Data Error');
+    console.error('Demo data error:', error);
+  } finally {
+    Utils.hideLoading();
+  }
+}
+
+/**
+ * Helper method to load file using XMLHttpRequest
+ * This avoids issues with fetch in some environments
+ * @param {string} url - URL of the file to load
+ * @returns {Promise<string>} - Promise resolving to file contents
+ */
+loadFileWithXHR(url) {
+  return new Promise((resolve, reject) => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'text';
+    
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        resolve(xhr.responseText);
+      } else {
+        reject(new Error(`Status ${xhr.status}: ${xhr.statusText}`));
+      }
+    };
+    
+    xhr.onerror = function() {
+      reject(new Error('Network error occurred'));
+    };
+    
+    xhr.send();
+  });
+}
 }
 
 // Initialize the application when DOM is ready
