@@ -1,0 +1,1379 @@
+/* Main Styles for Jira Epic Analyzer */
+:root {
+  /* Color palette */
+  --primary-color: #0052cc;
+  --primary-hover: #0747a6;
+  --secondary-color: #6b778c;
+  --secondary-hover: #505f79;
+  --background-color: #f5f7fa;
+  --panel-bg: #ffffff;
+  --text-color: #172b4d;
+  --light-text: #6b778c;
+  --border-color: #dfe1e6;
+  --success-bg: #e3fcef;
+  --success-color: #006644;
+  --warning-bg: #ffebe6;
+  --warning-color: #bf2600;
+  --info-bg: #deebff;
+  --info-color: #0747a6;
+  --header-bg: #0747a6;
+  --header-text: #ffffff;
+  
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  
+  /* Elements */
+  --border-radius: 6px;
+  --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+/* Layout */
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--spacing-lg);
+}
+
+header {
+  background-color: var(--header-bg);
+  color: var(--header-text);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+header h1 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.subtitle {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+main {
+  display: grid;
+  grid-gap: var(--spacing-lg);
+}
+
+footer {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+  padding: var(--spacing-lg);
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+/* Panels */
+.input-panel, .results-panel, .info-panel, .sla-config-panel {
+  background-color: var(--panel-bg);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  margin-bottom: var(--spacing-lg);
+}
+
+.panel-header {
+  background-color: #f4f5f7;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.panel-header h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.panel-body {
+  padding: var(--spacing-lg);
+}
+
+/* Form elements */
+.file-input-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.file-input-group label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+}
+
+.file-input-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+input[type="file"] {
+  flex: 1;
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: #f4f5f7;
+  transition: all 0.3s ease;
+}
+
+input[type="file"].highlight-required {
+  border: 2px solid var(--warning-color);
+  background-color: var(--warning-bg);
+  box-shadow: 0 0 8px rgba(191, 38, 0, 0.3);
+  animation: pulse 1.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); }
+}
+
+.file-name {
+  color: var(--light-text);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.action-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: background-color 0.2s;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.secondary-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: background-color 0.2s;
+}
+
+.secondary-btn:hover {
+  background-color: var(--secondary-hover);
+}
+
+/* Results section */
+.results-panel {
+  display: none;
+}
+
+.metrics-summary {
+  background-color: #f9fafb;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.metrics-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.metric-item {
+  padding: var(--spacing-md);
+  background-color: var(--panel-bg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.metric-value {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  display: block;
+}
+
+.metric-label {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+/* Filter Controls */
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.filter-item select {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: #f4f5f7;
+}
+
+/* Status Legend */
+.status-legend {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius);
+}
+
+.legend-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.on-track .legend-swatch {
+  background-color: var(--success-bg);
+}
+
+.at-risk .legend-swatch {
+  background-color: var(--warning-bg);
+}
+
+.closed .legend-swatch {
+  background-color: var(--info-bg);
+}
+
+/* Table Controls */
+.table-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.rows-per-page {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.rows-per-page select {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: #f4f5f7;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.pagination-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  width: 32px;
+  height: 32px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination-btn:hover:not([disabled]) {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.pagination-btn[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 0.9rem;
+  color: var(--light-text);
+}
+
+/* Table Styles */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-md);
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  text-align: left;
+}
+
+th {
+  background-color: #f4f5f7;
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+
+td.on-track {
+  background-color: var(--success-bg);
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+td.at-risk {
+  background-color: var(--warning-bg);
+  color: var(--warning-color);
+  font-weight: 600;
+}
+
+td.closed {
+  background-color: var(--info-bg);
+  color: var(--info-color);
+  font-weight: 600;
+}
+
+/* Sprint metrics table */
+.sprint-metrics-table {
+  margin-top: var(--spacing-md);
+  font-size: 0.9rem;
+}
+
+
+.sla-item {
+  background-color: #f4f5f7;
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: space-between;
+}
+
+.sla-label {
+  font-weight: 600;
+}
+
+/* Loading and error states */
+.loading-indicator {
+  display: none;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid rgba(0, 82, 204, 0.3);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.error-message {
+  display: none;
+  padding: var(--spacing-md);
+  background-color: var(--warning-bg);
+  color: var(--warning-color);
+  border-radius: var(--border-radius);
+  margin-top: var(--spacing-md);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: var(--spacing-md);
+  }
+  
+  .metrics-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-buttons, .filter-controls {
+    flex-direction: column;
+  }
+  
+  .filter-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .filter-item select {
+    width: 100%;
+  }
+}
+
+/* SLA Configuration styles */
+.sla-config-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.sla-config-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-sm);
+  background-color: #f9fafb;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+
+.sla-config-item label {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.sla-input-group {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.sla-input-group input[type="number"],
+.sla-input-group input[type="text"] {
+  width: 80px;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.sla-input-group input[disabled] {
+  background-color: #f0f0f0;
+  color: var(--light-text);
+  cursor: not-allowed;
+}
+
+.sla-config-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.sla-config-item.no-sla {
+  background-color: #f4f5f7;
+}
+
+/* Info note */
+.info-note {
+  background-color: var(--info-bg);
+  color: var(--info-color);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.9rem;
+  margin-top: var(--spacing-md);
+}
+
+.info-note i {
+  font-size: 1.1rem;
+}
+
+/* Additional styles for enhanced error handling */
+
+/* Error message variations */
+.error-message {
+display: none;
+padding: var(--spacing-md);
+border-radius: var(--border-radius);
+margin-top: var(--spacing-md);
+font-size: 0.95rem;
+line-height: 1.4;
+}
+
+.error-message i {
+margin-right: var(--spacing-sm);
+}
+
+.error-message {
+background-color: var(--warning-bg);
+color: var(--warning-color);
+border-left: 4px solid var(--warning-color);
+}
+
+.warning-message {
+background-color: #fffae6;
+color: #ff991f;
+border-left: 4px solid #ff991f;
+}
+
+.info-message {
+background-color: var(--info-bg);
+color: var(--info-color);
+border-left: 4px solid var(--info-color);
+}
+
+/* Loading indicator enhancements */
+.loading-indicator {
+display: none;
+align-items: center;
+gap: var(--spacing-md);
+margin-top: var(--spacing-md);
+padding: var(--spacing-md);
+background-color: rgba(255, 255, 255, 0.8);
+border-radius: var(--border-radius);
+}
+
+/* Progress indicator for large files */
+.progress-indicator {
+  width: 100%;
+  height: 6px;
+  background-color: var(--border-color);
+  border-radius: 3px;
+  margin-top: var(--spacing-sm);
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* CSV File preview */
+.file-preview {
+  margin-top: var(--spacing-md);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  max-height: 200px;
+  overflow: auto;
+  display: none;
+}
+
+.file-preview table {
+  width: 100%;
+  font-size: 0.8rem;
+  border-collapse: collapse;
+}
+
+.file-preview th {
+  background-color: #f4f5f7;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.file-preview td, .file-preview th {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  white-space: nowrap;
+}
+
+/* Help tooltip */
+.help-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  color: white;
+  font-size: 10px;
+  margin-left: var(--spacing-xs);
+  cursor: help;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #172b4d;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.8rem;
+  pointer-events: none;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Add these CSS rules to the end of your main.css file */
+
+/* Email button styles */
+.epic-actions {
+  text-align: center;
+}
+
+.email-btn {
+  background-color: var(--info-color);
+  color: white;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0 auto;
+}
+
+.email-btn:hover {
+  background-color: #0052cc;
+}
+
+.email-btn i {
+  font-size: 14px;
+}
+
+/* Email modal styles */
+.email-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.email-modal-content {
+  background-color: var(--panel-bg);
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 700px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.email-modal-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.email-modal-close:hover {
+  color: var(--secondary-hover);
+}
+
+.email-form {
+  margin-top: var(--spacing-lg);
+}
+
+.email-form-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.email-form-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-weight: 500;
+}
+
+.email-form-group input,
+.email-form-group textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.email-form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+  font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+}
+
+.email-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .email-modal-content {
+    width: 95%;
+    padding: var(--spacing-md);
+  }
+  
+  .email-actions {
+    flex-direction: column;
+  }
+}
+
+/* Email suggestions styles - updated for row display */
+.email-suggestions {
+  background-color: #f4f5f7;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-role {
+  font-weight: 600;
+  width: 100px;
+  flex-shrink: 0;
+}
+
+.suggestion-name {
+  flex: 1;
+  padding-left: var(--spacing-sm);
+  color: var(--text-color);
+}
+
+.add-recipient-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-left: var(--spacing-sm);
+}
+
+.add-recipient-btn:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+.add-recipient-btn.added {
+  background-color: var(--success-color);
+  animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+/* Email modal close button styling */
+.email-modal-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.email-modal-close:hover {
+  color: var(--secondary-hover);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .email-suggestions {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS updates for child issues display in the Jira Epic Analyzer */
+
+/* Child issue count badge */
+.child-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--info-color);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+/* Completion indicator for child issues */
+.completion-indicator {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-top: 4px;
+  position: relative;
+}
+
+.completion-bar {
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.completion-indicator span {
+  position: absolute;
+  right: 0;
+  top: -18px;
+  font-size: 0.8rem;
+  color: var(--light-text);
+}
+
+/* Child issues summary in email modal */
+.child-issues-summary {
+  background-color: #f4f5f7;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.child-issues-summary h4 {
+  font-size: 1rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+.child-issues-summary p {
+  font-size: 0.9rem;
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Update to sprint metrics table with improved styling */
+.sprint-metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing-md);
+  border: 1px solid var(--border-color);
+}
+
+.sprint-metrics-table th {
+  background-color: #f4f5f7;
+  padding: var(--spacing-sm);
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.sprint-metrics-table td {
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sprint-metrics-table tr:last-child td {
+  border-bottom: none;
+}
+
+.sprint-metrics-table tr:hover {
+  background-color: rgba(0, 82, 204, 0.05);
+}
+
+/* Add hover effect to email buttons */
+.email-btn:hover {
+  background-color: #0052cc;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+/* Improve metrics card styling */
+.metrics-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.metric-item {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.metric-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.metric-value {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  display: block;
+}
+
+.metric-label {
+  color: var(--light-text);
+  font-size: 0.9rem;
+  margin-top: var(--spacing-xs);
+}
+
+/* CSS for Epic Detail Popup */
+
+/* Clickable row styles */
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clickable-row:hover {
+  background-color: rgba(0, 82, 204, 0.05) !important;
+}
+
+/* Epic detail modal */
+.epic-detail-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.epic-detail-content {
+  background-color: var(--panel-bg);
+  border-radius: var(--border-radius);
+  width: 90%;
+  max-width: 900px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: var(--spacing-lg);
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.epic-detail-close {
+  position: absolute;
+  top: var(--spacing-md);
+  right: var(--spacing-md);
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  z-index: 5;
+}
+
+.epic-detail-close:hover {
+  color: var(--secondary-hover);
+}
+
+/* Epic header */
+.epic-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: var(--spacing-md);
+}
+
+.epic-detail-header h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-color);
+}
+
+.epic-id {
+  color: var(--light-text);
+  font-size: 1rem;
+  margin-left: var(--spacing-sm);
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.status-badge.on-track {
+  background-color: var(--success-bg);
+  color: var(--success-color);
+}
+
+.status-badge.at-risk {
+  background-color: var(--warning-bg);
+  color: var(--warning-color);
+}
+
+.status-badge.closed {
+  background-color: var(--info-bg);
+  color: var(--info-color);
+}
+
+/* Epic summary */
+.epic-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  background-color: #f9fafb;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-md);
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-label {
+  font-size: 0.8rem;
+  color: var(--light-text);
+  margin-bottom: 2px;
+}
+
+.summary-value {
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.summary-value.on-track {
+  color: var(--success-color);
+}
+
+.summary-value.at-risk {
+  color: var(--warning-color);
+}
+
+.summary-value.closed {
+  color: var(--info-color);
+}
+
+/* Child issues summary */
+.child-issues-summary {
+  margin-bottom: var(--spacing-md);
+}
+
+.child-issues-summary h4 {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-xs);
+}
+
+.child-issues-summary .child-count {
+  margin-left: auto;
+  font-size: 0.9rem;
+  color: var(--light-text);
+  font-weight: normal;
+}
+
+/* Status tabs */
+.status-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.status-tab {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 5px 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.status-tab:hover {
+  background-color: #f4f5f7;
+}
+
+.status-tab.active {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+/* Child issues table */
+.child-issues-container {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
+
+.child-issues-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.child-issues-table th {
+  position: sticky;
+  top: 0;
+  background-color: #f4f5f7;
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.child-issues-table td {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.child-issues-table tr:last-child td {
+  border-bottom: none;
+}
+
+.child-issues-table tr:nth-child(even) {
+  background-color: #fafbfc;
+}
+
+.child-issues-table tr:hover {
+  background-color: rgba(0, 82, 204, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .epic-detail-content {
+    width: 95%;
+    padding: var(--spacing-md);
+  }
+  
+  .epic-detail-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .epic-status {
+    margin-top: var(--spacing-sm);
+  }
+  
+  .status-tabs {
+    overflow-x: auto;
+    padding-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .child-issues-container {
+    max-height: 300px;
+  }
+}
+
+/* Children badge styles */
+.children-badge {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  line-height: 20px;
+  text-align: center;
+  margin-left: var(--spacing-xs);
+  cursor: help;
+}
+
+/* Total points display */
+.total-points {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+}
+
+/* Hover effect for child badge */
+.children-badge:hover {
+  background-color: var(--primary-hover);
+  transform: scale(1.1);
+}
+
+css.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.clickable-row:hover {
+  background-color: rgba(0, 82, 204, 0.05) !important;
+}
+
+.pagination-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Add these styles to the end of main.css */
+
+/* Table sorting styles */
+th.sortable {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding-right: 25px; /* Make space for the sort icon */
+}
+
+.sort-indicator {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.2s ease;
+}
+
+th.sortable:hover .sort-indicator {
+  color: var(--primary-color);
+}
+
+th.sortable:hover {
+  background-color: #e8f0fa;
+}
+
+/* Sprint badges for better visibility */
+.sprint-badge {
+  display: inline-block;
+  background-color: var(--info-bg);
+  color: var(--info-color);
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+/* Story points formatting */
+.total-points {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  margin-left: 4px;
+}
+
+/* Add hover effect to table rows */
+tr.clickable-row:hover {
+  background-color: rgba(0, 82, 204, 0.05);
+  cursor: pointer;
+}
+
+/* Make sort indicators more visible */
+.fa-sort-up, .fa-sort-down {
+  color: var(--primary-color);
+}
+
+.fa-sort {
+  color: var(--light-text);
+  opacity: 0.5;
+}
