@@ -1,0 +1,285 @@
+Key,Issue Type,Summary,Status,Created,Backlog,Cancelled,Code Review,Completed,Deployed to production,Done,Draft,In Development,In preprod testing,In Progress,In team environment testing,Open,PAUSED,Peer Review,Ready For Development,Ready for preprod testing,Ready for refinement,Ready For Release,Ready for sign-off,Ready for team environment testing,Ready for testing,Ready to deploy to production,Refinement,Refinement Ready,Released,Researching,Review Ready,Signed off,Sprint ready,Testing,To Do,TODO,Will Not Implement
+EPA-83888,Story,Implement Automated Test Coverage,To Do,2025-05-02 21:13,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2h 27m,-,-
+EPA-24453,Epic,Setup Epic Analyzer Project Structure,To Do,2025-05-02 21:10,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2h 30m,-,-
+EPA-12224,Bug,Enhance Epic Analyzer Module,To Do,2025-05-02 16:34,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,7h 6m,-,-
+EPA-12193,Sub-task,Implement Automated Test Coverage,Completed,2025-05-02 12:00,-,-,-,8h 5m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3h 36m,0m,-,-
+EPA-21719,Technical Story,Configure SLA Review Template,To Do,2025-05-02 11:57,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,11h 43m,-,-
+EPA-16095,Story,Enhance Epic Analyzer Module,Signed off,2025-05-02 10:33,-,-,-,-,-,-,-,1h 16m,-,-,3h 35m,-,-,3m,-,-,-,-,38m,8m,-,-,-,-,-,-,-,7h 27m,-,-,0m,-,-
+EPA-11162,Sub-task,Implement Automated Test Coverage,To Do,2025-05-02 09:24,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,14h 16m,-,-
+EPA-30352,Sub-task,Implement Automated Test Coverage,To Do,2025-05-02 09:23,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,14h 17m,-,-
+EPA-24643,Sub-task,Implement Automated Test Coverage,To Do,2025-05-02 09:21,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,14h 19m,-,-
+EPA-13518,Sub-task,Implement Automated Test Coverage,In Progress,2025-05-02 09:21,-,-,-,-,-,-,-,-,-,14h 19m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-48460,Story,Enhance Epic Analyzer Module,To Do,2025-05-01 14:25,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 9h 15m,-,-
+EPA-29591,Epic,Setup Epic Analyzer Project Structure,To Do,2025-05-01 03:34,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 20h 6m,-,-
+EPA-14641,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-30 14:03,-,-,-,2d 9h 37m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-24749,Automation,Implement Automated Test Coverage,In Progress,2025-04-30 12:28,-,-,-,-,-,-,-,-,-,2d 11h 9m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3m,-,-
+EPA-69179,Sub-task,Implement Automated Test Coverage,Completed,2025-04-30 12:27,-,-,-,2d 11h 13m,-,-,-,-,-,0m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-28525,Sub-task,Implement Automated Test Coverage,Completed,2025-04-30 11:15,-,-,-,11h 42m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 0h 43m,0m,-,-
+EPA-11273,Task,Enhance Epic Analyzer Module,To Do,2025-04-30 11:03,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 12h 37m,-,-
+EPA-28240,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-04-30 10:55,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 12h 45m,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-20415,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-29 13:45,-,-,-,2d 8h 46m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 1h 9m,-,-
+EPA-31356,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-29 13:44,-,-,-,2d 13h 16m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,20h 40m,-,-
+EPA-14484,Sub-task,Implement Automated Test Coverage,Completed,2025-04-29 12:15,-,-,-,2d 12h 32m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,22h 52m,0m,-,-
+EPA-26663,Sub-task,Implement Automated Test Coverage,Completed,2025-04-29 09:40,-,-,-,3d 13h 45m,-,-,-,-,-,15m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-32452,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-04-23 17:27,4d 19h 29m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 12h 34m,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 22h 10m,-,-
+EPA-32992,Sub-task,Implement Automated Test Coverage,Completed,2025-04-28 09:34,-,-,-,3d 11h 50m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,19h 34m,6h 42m,-,-
+EPA-19466,Sub-task,Implement Automated Test Coverage,Completed,2025-04-28 09:32,-,-,-,4d 7h 25m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,6h 43m,0m,-,-
+EPA-93856,Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-25 15:21,-,-,-,-,2d 2h 17m,-,-,2d 21h 45m,-,-,22h 51m,-,-,5m,-,-,-,-,2h 56m,22h 16m,-,-,-,-,-,-,-,7h 20m,-,-,49m,-,-
+EPA-15598,Bug,Configure SLA Review Template,Peer Review,2025-04-25 14:07,-,-,-,-,-,-,-,22h 31m,-,-,-,-,-,3d 13h 0m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 22h 2m,-,-
+EPA-21286,Story,Enhance Epic Analyzer Module,Signed off,2025-04-24 15:19,-,-,-,-,-,-,-,-,-,49m,2d 0h 43m,-,-,5d 17h 0m,-,-,-,-,2h 13m,2h 8m,-,-,-,-,-,-,-,9h 29m,-,-,0m,-,-
+EPA-21208,Task,Enhance Epic Analyzer Module,Completed,2025-04-24 08:54,-,-,-,1w 0d 14h 31m,-,-,-,1d 0h 0m,-,0m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,15m,-,-
+EPA-34893,Defect,Enhance Epic Analyzer Module,Completed,2025-04-23 09:43,-,-,-,1w 1d 8h 27m,-,-,-,-,-,19h 52m,-,-,-,5h 50m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3h 48m,-,-
+EPA-25860,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 16:29,-,-,-,1d 10h 4m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2h 34m,1w 1d 18h 33m,-,-
+EPA-44658,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 16:28,-,-,-,1d 12h 38m,-,-,-,-,-,5d 19h 42m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 22h 52m,-,-
+EPA-17588,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 16:27,-,-,-,1d 8h 34m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1h 25m,1w 1d 21h 13m,-,-
+EPA-81297,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 16:26,-,-,-,1w 2d 9h 30m,-,-,-,-,-,21h 44m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-65664,Task,Implement Automated Test Coverage,Completed,2025-04-22 14:51,-,-,-,6d 10h 34m,-,-,-,1d 0h 17m,-,27m,-,-,-,2d 3h 2m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,18h 29m,-,-
+EPA-39935,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 13:32,-,-,-,1w 3d 8h 57m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1h 10m,1m,-,-
+EPA-31209,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 13:31,-,-,-,1w 3d 9h 56m,-,-,-,-,-,13m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-13163,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 11:04,-,-,-,1w 3d 7h 18m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1h 52m,3h 26m,-,-
+EPA-25469,Sub-task,Implement Automated Test Coverage,Completed,2025-04-22 11:03,-,-,-,1w 3d 8h 36m,-,-,-,-,-,4h 1m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-31837,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-04-22 10:58,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 12h 40m,-,-,-,-,-,-,-,-,-,-,-,-,-,2m,-,-
+EPA-10075,Story,Enhance Epic Analyzer Module,To Do,2025-04-22 10:57,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 12h 43m,-,-
+EPA-31507,Story,Enhance Epic Analyzer Module,Ready For Development,2025-04-22 10:52,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 11h 53m,-,54m,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-18395,Epic,Enhance Epic Analyzer Module,Refinement,2025-04-22 10:47,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 7h 53m,-,-,-,-,-,-,-,5h 0m,-,-
+EPA-18325,Story,Enhance Epic Analyzer Module,In Development,2025-04-22 10:23,-,-,-,-,-,-,-,1d 9h 21m,-,-,-,-,-,-,1w 2d 2h 48m,-,27m,-,-,-,-,-,-,-,-,-,-,-,-,-,40m,-,-
+EPA-14794,Sub-task,Implement Automated Test Coverage,Completed,2025-04-18 13:44,-,-,-,1w 3d 11h 1m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3h 9m,3d 19h 46m,-,-
+EPA-14646,Sub-task,Implement Automated Test Coverage,Completed,2025-04-18 13:44,-,-,-,1w 3d 14h 10m,-,-,-,-,-,3d 19h 45m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2m,-,-
+EPA-28600,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-18 10:15,-,-,-,-,6d 10h 53m,-,-,3d 23h 5m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5h 34m,-,-,3d 21h 54m,-,-
+EPA-24095,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 16:42,-,-,-,1w 2d 13h 54m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5d 17h 4m,-,-
+EPA-79667,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 16:41,-,-,-,1w 1d 8h 19m,-,-,-,-,-,1d 2h 20m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5d 20h 20m,-,-
+EPA-21066,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 16:41,-,-,-,1w 2d 14h 11m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5d 16h 48m,-,-
+EPA-13438,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 16:41,-,-,-,12h 37m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 0d 18h 23m,-,-
+EPA-34021,Sub-task,Enhance Epic Analyzer Module,To Do,2025-04-17 16:40,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 6h 59m,-,-
+EPA-22770,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 16:40,-,-,-,1w 2d 14h 14m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5d 16h 46m,-,-
+EPA-23684,Sub-task,Enhance Epic Analyzer Module,To Do,2025-04-17 16:40,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 7h 0m,-,-
+EPA-77838,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 16:39,-,-,-,1d 9h 19m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 6d 21h 42m,-,-
+EPA-18274,Sub-task,Implement Automated Test Coverage,Completed,2025-04-17 14:21,-,-,-,2w 0d 11h 25m,-,-,-,-,-,21h 54m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-16745,Sub-task,Enhance Epic Analyzer Module,To Do,2025-04-17 13:48,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 9h 52m,-,-
+EPA-51427,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 13:47,-,-,-,2d 8h 50m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 6d 1h 2m,-,-
+EPA-11362,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 13:29,-,-,-,2w 1d 9h 25m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,46m,-,-
+EPA-15027,Sub-task,Enhance Epic Analyzer Module,To Do,2025-04-17 11:16,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 12h 24m,-,-
+EPA-30199,Sub-task,Implement Automated Test Coverage,Completed,2025-04-17 11:13,-,-,-,6h 29m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 3h 32m,1w 6d 2h 26m,-,-
+EPA-26399,Sub-task,Implement Automated Test Coverage,Completed,2025-04-17 11:12,-,-,-,1w 3d 9h 56m,-,-,-,-,-,4d 21h 56m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4h 36m,-,-
+EPA-87431,Sub-task,Enhance Epic Analyzer Module,To Do,2025-04-17 11:12,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 12h 28m,-,-
+EPA-16159,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 11:10,-,-,-,2d 13h 13m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 5d 23h 17m,-,-
+EPA-28486,Sub-task,Implement Automated Test Coverage,Completed,2025-04-17 11:07,-,-,-,1w 1d 12h 56m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,20h 16m,6d 3h 21m,-,-
+EPA-13666,Sub-task,Implement Automated Test Coverage,In Progress,2025-04-17 10:52,-,-,-,-,-,-,-,-,-,3d 9h 6m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 5d 3h 42m,-,-
+EPA-40226,Sub-task,Implement Automated Test Coverage,In Progress,2025-04-17 10:41,-,-,-,-,-,-,-,-,-,3d 9h 6m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 5d 3h 53m,-,-
+EPA-66016,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 10:41,-,-,-,3d 9h 6m,-,-,-,-,-,6d 3h 29m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,6d 0h 24m,-,-
+EPA-22234,Automation,Implement Automated Test Coverage,Completed,2025-04-17 10:34,-,-,-,2d 11h 9m,-,-,-,-,-,1w 5d 22h 36m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3h 21m,-,-
+EPA-17723,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-17 10:09,-,-,-,1w 2d 14h 15m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5d 23h 16m,-,-
+EPA-23783,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-16 12:58,-,-,-,2w 2d 8h 49m,-,-,-,-,-,3m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1h 50m,-,-
+EPA-20235,Sub-task,Implement Automated Test Coverage,Completed,2025-04-16 12:57,-,-,-,2w 2d 10h 12m,-,-,-,-,-,0m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,27m,3m,-,-
+EPA-77406,Spike,Enhance Epic Analyzer Module,To Do,2025-04-16 12:03,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 2d 11h 37m,-,-
+EPA-29874,Epic,Setup Epic Analyzer Project Structure,To Do,2025-04-16 11:49,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 2d 11h 51m,-,-
+EPA-22417,Story,Implement Automated Test Coverage,Deployed to production,2025-04-15 14:15,-,-,-,-,2d 13h 16m,-,-,2d 5h 50m,5m,-,0m,-,-,-,4d 21h 59m,-,2m,-,-,-,-,5d 0h 32m,-,-,-,-,-,19h 15m,-,-,1d 20h 24m,-,-
+EPA-22061,Task,Enhance Epic Analyzer Module,Completed,2025-04-15 10:35,-,-,-,6d 10h 30m,-,-,-,1w 0d 22h 4m,-,1m,-,-,-,-,3d 4h 30m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-30332,Bug,Enhance Epic Analyzer Module,Ready For Development,2025-04-15 10:21,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 12h 34m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 0h 46m,-,-
+EPA-21220,Sub-task,Implement Automated Test Coverage,Completed,2025-04-14 15:11,-,-,-,1w 0d 8h 20m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 4h 23m,1w 2d 19h 46m,-,-
+EPA-14262,Sub-task,Implement Automated Test Coverage,Completed,2025-04-14 15:10,-,-,-,2w 1d 9h 18m,-,-,-,-,-,2d 23h 11m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-14515,Story,Configure SLA Review Template,Ready For Development,2025-04-14 11:36,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 2d 12h 11m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 23h 53m,-,-
+EPA-96077,Technical Story,Enhance Epic Analyzer Module,Ready For Development,2025-04-14 10:36,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 12h 51m,-,5m,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 0h 8m,-,-
+EPA-17828,Technical Story,Enhance Epic Analyzer Module,Ready For Development,2025-04-14 10:35,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 12h 51m,-,5m,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 0h 9m,-,-
+EPA-32488,Task,Enhance Epic Analyzer Module,Done,2025-04-14 10:27,-,-,-,-,-,2w 4d 12h 57m,-,15m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1m,-,-
+EPA-18815,Technical Story,Enhance Epic Analyzer Module,Ready For Development,2025-04-14 08:39,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 12h 2m,-,1w 0d 23h 40m,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 1d 3h 19m,-,-
+EPA-67495,Technical Story,Enhance Epic Analyzer Module,Ready For Development,2025-04-14 08:38,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 12h 2m,-,1w 0d 23h 40m,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 1d 3h 20m,-,-
+EPA-33856,Story,Enhance Epic Analyzer Module,Will Not Implement,2025-04-11 15:43,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 4d 18h 9m,-,-,0m,-,-,-,-,-,-,-,-,-,-,1h 10m,-,1w 2d 12h 38m
+EPA-32965,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-04-10 16:02,-,-,-,-,2w 2d 5h 27m,-,-,2d 8h 10m,0m,-,0m,-,-,-,-,-,-,-,-,-,-,6m,-,-,-,-,-,-,-,-,3d 17h 55m,-,-
+EPA-10360,Defect,Enhance Epic Analyzer Module,Completed,2025-04-10 09:57,-,-,-,3w 1d 6h 46m,-,-,-,-,-,2h 37m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4h 19m,-,-
+EPA-20458,Story,Enhance Epic Analyzer Module,In Development,2025-04-10 09:24,-,-,-,-,-,-,-,11h 18m,-,-,-,-,-,-,2w 2d 0h 53m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,6d 2h 5m,-,-
+EPA-19345,Defect,Enhance Epic Analyzer Module,Will Not Implement,2025-04-09 15:25,-,-,-,-,-,-,-,-,-,2h 36m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,22h 53m,-,3w 1d 6h 46m
+EPA-33548,Sub-task,Implement Automated Test Coverage,Completed,2025-04-09 10:33,-,-,-,3w 2d 10h 48m,-,-,-,-,-,1m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2h 19m,0m,-,-
+EPA-30549,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-09 10:23,-,-,-,-,2w 1d 6h 43m,-,-,1w 1d 6h 15m,18m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-23180,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-04-08 12:31,-,-,-,-,2d 2h 16m,-,-,2d 0h 22m,-,-,1h 18m,-,-,6d 23h 35m,-,-,-,-,48m,28m,-,-,-,-,-,-,-,1w 0d 9h 13m,-,-,5d 21h 7m,-,-
+EPA-65635,Sub-task,Implement Automated Test Coverage,Completed,2025-04-07 09:55,-,-,-,2w 3d 6h 48m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,7h 29m,1w 0d 23h 28m,-,-
+EPA-26842,Sub-task,Implement Automated Test Coverage,Completed,2025-04-07 09:55,-,-,-,2w 4d 14h 32m,-,-,-,-,-,6d 21h 16m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1h 57m,-,-
+EPA-13134,Technical Story,Enhance Epic Analyzer Module,To Do,2025-04-04 11:14,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 0d 12h 26m,-,-
+EPA-19658,Technical Story,Enhance Epic Analyzer Module,To Do,2025-04-04 11:13,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 0d 12h 26m,-,-
+EPA-24444,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-04-04 09:49,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 0d 13h 51m,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-13416,Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-04 09:31,-,-,-,-,2d 2h 16m,-,-,0m,-,-,21h 17m,-,-,1w 0d 23h 22m,1w 4d 4h 27m,-,4m,-,5d 23h 43m,-,-,-,-,-,-,-,-,10h 57m,-,-,4m,-,-
+EPA-71709,Technical Story,Enhance Epic Analyzer Module,To Do,2025-04-04 08:08,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 0d 15h 32m,-,-
+EPA-25328,Sub-task,Implement Automated Test Coverage,Completed,2025-04-03 14:47,-,-,-,4w 0d 11h 21m,-,-,-,-,-,21h 32m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-31939,Epic,Setup Epic Analyzer Project Structure,To Do,2025-04-03 09:53,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 1d 13h 47m,-,-
+EPA-27762,Story,Enhance Epic Analyzer Module,To Do,2025-04-02 17:16,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 2d 6h 24m,-,-
+EPA-63605,Story,Fix SLA Breach Alert Issue,Deployed to production,2025-04-02 16:57,-,-,-,-,2d 2h 16m,-,-,1d 3h 45m,-,-,1h 53m,-,-,7m,2w 0d 4h 32m,-,-,-,20h 39m,3d 23h 25m,-,-,-,-,-,-,-,6d 4h 40m,-,-,1d 17h 26m,-,-
+EPA-47757,Story,Enhance Epic Analyzer Module,Signed off,2025-04-02 16:53,-,-,-,-,-,-,-,4d 0h 34m,0m,-,1h 25m,-,-,4d 22h 14m,2w 3d 5h 41m,-,4m,-,19h 59m,22h 46m,-,-,-,-,-,-,-,12h 36m,-,-,1d 17h 28m,-,-
+EPA-15030,Story,Enhance Epic Analyzer Module,Signed off,2025-04-02 16:41,-,-,-,-,-,-,-,3h 17m,-,-,19h 34m,-,-,0m,-,-,3w 1d 1h 1m,-,1d 3h 5m,2d 1h 38m,-,-,-,-,-,-,-,2d 8h 46m,-,-,1d 17h 38m,-,-
+EPA-11277,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-04-02 16:27,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 0d 13h 23m,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 17h 50m,-,-
+EPA-37751,Story,Enhance Epic Analyzer Module,Ready For Development,2025-04-02 16:26,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 0d 13h 16m,-,18m,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 17h 39m,-,-
+EPA-12133,Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-02 16:25,-,-,-,-,2d 12h 7m,-,-,33m,-,-,3h 9m,-,-,1m,2w 0d 3h 30m,-,-,-,20h 50m,3d 19h 21m,-,-,-,-,-,-,-,1w 0d 2h 4m,-,-,1d 17h 39m,-,-
+EPA-15132,Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-02 16:24,-,-,-,-,2d 12h 9m,-,-,5m,-,-,1h 19m,-,-,23m,2w 0d 5h 15m,-,-,-,18h 44m,3d 21h 39m,-,-,-,-,-,-,-,1w 0d 2h 4m,-,-,1d 17h 38m,-,-
+EPA-24591,Story,Enhance Epic Analyzer Module,In Development,2025-04-02 16:23,-,-,-,-,-,-,-,10h 23m,-,-,-,-,-,0m,3w 3d 3h 2m,-,4d 0h 42m,-,-,0m,-,-,-,-,-,-,-,-,-,-,1d 17h 9m,-,-
+EPA-15287,Story,Enhance Epic Analyzer Module,Signed off,2025-04-02 16:19,-,-,-,-,-,-,-,2d 23h 7m,-,-,2h 21m,-,-,5d 23h 40m,2w 3d 4h 51m,-,26m,-,45m,21h 38m,-,-,-,-,-,-,-,1d 9h 19m,-,-,1d 17h 13m,-,-
+EPA-20384,Story,Enhance Epic Analyzer Module,Peer Review,2025-04-02 16:15,-,-,-,-,-,-,-,1w 0d 23h 5m,-,-,-,-,-,10h 38m,2w 6d 4h 2m,-,24m,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 17h 16m,-,-
+EPA-13148,Story,Enhance Epic Analyzer Module,Ready for sign-off,2025-04-02 16:12,-,-,-,-,-,-,-,3d 2h 37m,-,-,4h 5m,-,-,1d 0h 19m,3w 3d 0h 22m,-,23m,-,6h 29m,-,-,-,-,-,-,-,-,-,-,-,1d 17h 13m,-,-
+EPA-16326,Sub-task,Implement Automated Test Coverage,Completed,2025-04-02 14:36,-,-,-,4w 0d 9h 51m,-,-,-,-,-,1d 3h 0m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,20h 13m,-,-
+EPA-32525,Sub-task,Enhance Epic Analyzer Module,Completed,2025-04-02 12:38,-,-,-,2w 1d 6h 37m,-,-,-,-,-,1w 1d 1h 41m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 0d 2h 44m,-,-
+EPA-26142,Technical Story,Enhance Epic Analyzer Module,Ready For Development,2025-04-02 10:38,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 12h 23m,-,4w 0d 0h 37m,-,-,-,-,-,-,-,-,-,-,-,-,-,2m,-,-
+EPA-24560,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-02 10:36,-,-,-,-,1w 0d 10h 25m,-,-,4h 41m,9m,-,21h 31m,-,-,-,2w 6d 19h 13m,-,-,-,-,-,-,0m,-,-,-,-,-,1h 1m,-,-,1d 4h 3m,-,-
+EPA-12228,Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-01 12:39,-,-,-,-,2w 3d 10h 11m,-,-,3d 22h 56m,-,-,2h 18m,-,-,1d 4h 21m,21h 9m,-,-,-,18h 36m,21h 13m,-,-,-,-,-,-,-,5d 6h 2m,-,-,1d 0h 15m,-,-
+EPA-17910,Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-01 12:35,-,-,-,-,1w 0d 10h 25m,-,-,4h 35m,9m,-,21h 31m,-,-,-,3w 0d 23h 28m,-,-,-,-,-,-,0m,-,-,-,-,-,1h 1m,-,-,21h 54m,-,-
+EPA-31741,Sub-task,Implement Automated Test Coverage,Completed,2025-04-01 11:42,-,-,-,4w 1d 6h 37m,-,-,-,-,-,1d 2h 29m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 2h 52m,-,-
+EPA-25570,Sub-task,Implement Automated Test Coverage,Completed,2025-04-01 11:41,-,-,-,4w 2d 7h 55m,-,-,-,-,-,1d 4h 4m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-22965,Epic,Enhance Epic Analyzer Module,Researching,2025-04-01 11:31,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 1d 13h 41m,-,-,-,-,1d 22h 28m,-,-
+EPA-80279,Story,Enhance Epic Analyzer Module,Deployed to production,2025-04-01 09:19,-,-,-,-,2w 4d 13h 10m,-,-,1w 0d 2h 26m,50m,-,2d 22h 23m,-,-,-,18h 12m,-,-,-,-,-,-,0m,-,-,-,-,-,-,-,-,2d 5h 20m,-,-
+EPA-98265,Sub-task,Implement Automated Test Coverage,Completed,2025-03-31 18:05,-,-,-,1M 0w 1d 12h 29m,-,-,-,-,-,17h 5m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-30993,Sub-task,Implement Automated Test Coverage,Completed,2025-03-31 18:05,-,-,-,1M 0w 2d 5h 35m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-38258,Spike,Enhance Epic Analyzer Module,Completed,2025-03-31 14:46,-,-,-,2w 4d 13h 1m,-,-,-,-,-,1w 4d 19h 41m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 0h 13m,-,-
+EPA-31651,Spike,Enhance Epic Analyzer Module,Completed,2025-03-31 11:11,-,-,-,2w 2d 13h 37m,-,-,-,-,-,1w 0d 22h 43m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 1d 0h 9m,-,-
+EPA-16013,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-29 12:45,-,-,-,-,3w 3d 12h 32m,-,-,0m,1h 19m,-,2d 21h 43m,-,-,-,15m,-,-,-,22h 17m,22h 55m,-,0m,-,-,-,-,-,-,-,-,5d 0h 53m,-,-
+EPA-16906,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-28 15:14,-,-,-,-,4w 2d 8h 12m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4d 23h 13m,-,-
+EPA-18400,Epic,Enhance Epic Analyzer Module,In Progress,2025-03-28 11:46,-,-,-,-,-,-,-,-,-,2w 2d 7h 14m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 6d 6h 34m,-,-,-,-,5d 21h 6m,-,-
+EPA-24631,Story,Enhance Epic Analyzer Module,Deployed to production,2025-03-27 13:42,-,-,-,-,1M 0w 0d 11h 11m,-,-,2d 3h 5m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 18h 43m,-,-
+EPA-23849,Story,Enhance Epic Analyzer Module,Ready for sign-off,2025-03-26 17:28,-,-,-,-,-,-,-,2w 0d 5h 50m,-,-,1d 0h 46m,-,-,2d 19h 1m,1w 2d 19h 42m,-,21m,-,1w 0d 8h 21m,4h 43m,-,-,-,-,-,-,-,-,-,-,1d 18h 27m,-,-
+EPA-12020,Spike,Enhance Epic Analyzer Module,Completed,2025-03-26 15:00,-,-,-,6d 9h 9m,-,-,-,-,-,5h 36m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 0w 0d 16h 55m,-,-
+EPA-26363,Sub-task,Implement Automated Test Coverage,Completed,2025-03-26 12:54,-,-,-,1M 0w 2d 12h 28m,-,-,-,-,-,4d 21h 18m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-25337,Sub-task,Configure SLA Review Template,Completed,2025-03-26 11:00,-,-,-,3w 4d 11h 29m,-,-,-,-,-,1w 0d 20h 22m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4d 3h 49m,0m,-,-
+EPA-98330,Task,Implement Automated Test Coverage,Completed,2025-03-26 08:17,-,-,-,1M 0w 1d 11h 21m,-,-,-,-,-,6d 3h 0m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1m,-,-
+EPA-16084,Bug,Fix SLA Breach Alert Issue,Will Not Implement,2025-03-25 15:28,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,6m,-,-,-,-,-,-,-,-,1w 0d 18h 23m,-,1M 0w 0d 12h 44m
+EPA-80622,Bug,Enhance Epic Analyzer Module,Will Not Implement,2025-02-11 16:17,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 2w 4d 18h 8m,-,1M 0w 1d 12h 15m
+EPA-15428,Sub-task,Implement Automated Test Coverage,Completed,2025-03-24 14:31,-,-,-,3w 2d 13h 38m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 0h 6m,2w 0d 18h 26m,-,-
+EPA-16920,Sub-task,Implement Automated Test Coverage,Completed,2025-03-24 14:30,-,-,-,1M 1w 0d 11h 48m,-,-,-,-,-,1d 20h 22m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-43783,Story,Enhance Epic Analyzer Module,To Do,2025-03-24 12:06,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 1w 2d 10h 34m,-,-
+EPA-31996,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-03-24 08:59,-,-,-,-,1M 0w 5d 8h 10m,-,-,1d 5h 26m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 0h 4m,-,-,0m,-,-
+EPA-22121,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-21 12:14,-,-,-,-,2d 2h 16m,-,-,-,-,-,1d 1h 34m,-,-,-,3w 0d 2h 41m,-,-,-,5d 23h 45m,-,-,-,-,-,-,-,-,6h 34m,-,-,1w 4d 21h 36m,-,-
+EPA-13160,Spike,Enhance Epic Analyzer Module,Completed,2025-03-20 14:16,-,-,-,4w 0d 7h 6m,-,-,-,-,-,2w 0d 6h 31m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,18h 47m,-,-
+EPA-32905,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-03-20 13:21,-,-,-,-,3w 3d 12h 32m,-,-,18h 21m,1h 20m,-,-,-,-,-,1w 3d 2h 21m,-,3d 22h 11m,-,-,4d 0h 33m,-,0m,-,-,-,-,-,-,-,-,0m,-,-
+EPA-13312,Sub-task,Enhance Epic Analyzer Module,Completed,2025-03-20 08:51,-,-,-,2w 3d 13h 47m,-,-,-,-,-,2w 1d 0h 20m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 23h 42m,-,-
+EPA-31899,Story,Enhance Epic Analyzer Module,Deployed to production,2025-03-19 14:15,-,-,-,-,2w 1d 6h 44m,-,-,4d 3h 45m,-,18h 34m,21h 17m,-,-,1w 4d 23h 46m,1w 2d 20h 36m,-,-,-,3h 0m,6h 12m,-,2m,-,-,-,-,-,1d 0h 28m,-,-,0m,-,-
+EPA-11488,Sub-task,Implement Automated Test Coverage,Completed,2025-03-19 13:51,-,-,-,1M 2w 0d 7h 44m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,52m,12m,-,-
+EPA-38245,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-19 12:17,-,-,-,-,1M 1w 6d 9h 18m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 1h 6m,-,-
+EPA-31881,Technical Story,Enhance Epic Analyzer Module,Will Not Implement,2025-03-19 08:24,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 0d 1h 5m,-,1M 0w 0d 13h 11m
+EPA-41119,Task,Enhance Epic Analyzer Module,Completed,2025-03-19 07:41,-,-,-,2w 1d 12h 53m,-,-,-,1w 2d 23h 43m,-,2m,-,-,-,-,2w 2d 21h 31m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 4h 50m,-,-
+EPA-14909,Sub-task,Enhance Epic Analyzer Module,Completed,2025-03-19 07:40,-,-,-,2w 2d 13h 36m,-,-,-,-,-,4d 22h 14m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3w 2d 3h 9m,-,-
+EPA-24323,Sub-task,Enhance Epic Analyzer Module,Completed,2025-03-19 07:40,-,-,-,2w 2d 13h 36m,-,-,-,-,-,4d 22h 14m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3w 2d 3h 10m,-,-
+EPA-15693,Sub-task,Enhance Epic Analyzer Module,Completed,2025-03-19 07:40,-,-,-,2w 2d 13h 36m,-,-,-,-,-,4d 22h 14m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3w 2d 3h 10m,-,-
+EPA-27132,Bug,Enhance Epic Analyzer Module,Will Not Implement,2025-03-18 13:16,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,30m,-,1M 2w 1d 8h 54m
+EPA-84123,Task,Implement Automated Test Coverage,Completed,2025-03-17 14:37,-,-,-,2w 1d 12h 54m,-,-,-,5d 22h 55m,-,1m,-,-,-,-,2w 6d 22h 18m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 21h 54m,-,-
+EPA-22057,Task,Enhance Epic Analyzer Module,Completed,2025-03-17 13:32,-,-,-,1M 0w 2d 15h 7m,-,-,-,-,-,4d 0h 49m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 2d 17h 12m,-,-
+EPA-95571,Task,Enhance Epic Analyzer Module,Completed,2025-03-17 08:24,-,-,-,1M 2w 0d 11h 19m,-,-,-,21h 46m,-,1m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 3h 35m,-,-,1h 36m,-,-
+EPA-17392,Task,Implement Automated Test Coverage,Completed,2025-03-14 16:46,-,-,-,1M 0w 1d 14h 0m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,22h 25m,-,-,2w 2d 17h 30m,-,-
+EPA-13462,Story,Enhance Epic Analyzer Module,Deployed to production,2025-03-14 10:41,-,-,-,-,2d 5h 37m,-,-,5d 20h 32m,0m,-,22h 58m,-,-,3d 22h 48m,1w 0d 2h 32m,-,8m,-,41m,1d 3h 20m,-,0m,-,-,-,-,-,4w 0d 5h 23m,-,-,0m,-,-
+EPA-99283,Bug,Enhance Epic Analyzer Module,Will Not Implement,2025-03-14 10:02,-,-,-,-,-,-,-,-,-,-,3h 2m,-,-,-,-,-,1w 3d 20h 21m,-,-,-,-,-,-,-,-,-,-,-,-,-,6d 4h 10m,-,1M 0w 2d 9h 5m
+EPA-18988,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-14 09:59,-,-,-,-,2d 2h 17m,-,-,6d 0h 58m,-,-,1w 6d 5h 8m,-,-,1w 2d 23h 27m,4d 21h 19m,-,0m,-,5d 17h 16m,23h 2m,-,-,-,-,-,-,-,10h 58m,-,-,6d 4h 15m,-,-
+EPA-79786,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-13 09:09,-,-,-,-,2w 3d 10h 12m,-,-,1w 3d 23h 27m,-,-,4h 13m,-,-,1w 2d 23h 3m,-,-,-,-,2d 23h 36m,2d 19h 27m,-,-,-,-,-,-,-,1d 1h 51m,-,-,5d 3h 40m,-,-
+EPA-23816,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-13 08:07,-,-,-,-,4w 1d 9h 31m,-,-,1h 59m,-,-,36m,-,-,3d 0h 23m,3d 22h 21m,-,-,-,5d 2h 0m,16m,-,-,-,-,-,-,-,1w 0d 22h 24m,-,-,1d 3h 3m,-,-
+EPA-13958,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-12 10:38,-,-,-,-,1M 2w 0d 9h 25m,-,-,3d 23h 57m,-,-,3h 10m,-,-,47m,-,-,-,-,1d 22h 18m,48m,-,-,-,-,-,-,-,15m,-,-,23h 21m,-,-
+EPA-80064,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-10 11:17,-,-,-,-,2w 3d 10h 12m,-,-,4d 3h 59m,-,-,1d 3h 14m,-,-,21h 52m,17h 54m,-,0m,-,5d 19h 45m,29m,-,-,-,-,-,-,-,1w 6d 3h 4m,-,-,1w 3d 2h 54m,-,-
+EPA-29477,Sub-task,Implement Automated Test Coverage,Completed,2025-03-06 13:13,-,-,-,1M 1w 5d 10h 10m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 0d 23h 17m,-,0m
+EPA-11034,Sub-task,Implement Automated Test Coverage,Completed,2025-03-06 13:12,-,-,-,1M 1w 5d 10h 10m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 0d 23h 18m,-,-
+EPA-32950,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-03-05 14:57,-,-,-,-,1M 1w 6d 6h 42m,-,-,22m,-,-,-,-,-,19h 56m,0m,-,-,-,-,3d 3h 54m,-,-,-,-,-,-,-,1w 3d 1h 27m,-,-,23h 21m,-,-
+EPA-32979,Automation,Implement Automated Test Coverage,To Do,2025-03-05 12:40,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 4w 0d 9h 59m,-,-
+EPA-13187,Task,Enhance Epic Analyzer Module,Completed,2025-03-05 11:05,-,-,-,1M 1w 6d 9h 13m,-,-,-,6d 21h 1m,-,-,2h 38m,-,-,-,1d 1h 52m,-,-,-,2h 37m,-,-,-,-,-,-,-,-,6d 22h 14m,-,-,0m,-,-
+EPA-33142,Sub-task,Enhance Epic Analyzer Module,To Do,2025-03-05 10:18,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 4w 0d 12h 22m,-,-
+EPA-32578,Sub-task,Enhance Epic Analyzer Module,To Do,2025-03-05 10:18,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 4w 0d 12h 22m,-,-
+EPA-17591,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-03-05 10:17,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 4w 0d 12h 23m,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-14069,Story,Enhance Epic Analyzer Module,Peer Review,2025-03-05 08:52,-,-,-,-,-,-,-,1M 0w 5d 23h 2m,-,-,-,-,-,1w 1d 10h 33m,5d 3h 0m,-,0m,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 2d 1h 13m,-,-
+EPA-14009,Story,Enhance Epic Analyzer Module,Deployed to production,2025-03-05 08:39,-,-,-,-,1M 2w 0d 9h 39m,-,-,1w 5d 21h 48m,-,-,-,-,-,-,23h 12m,-,5h 56m,-,-,-,-,-,-,-,-,-,-,-,-,-,1h 27m,-,-
+EPA-16414,Story,Enhance Epic Analyzer Module,Deployed to production,2025-03-05 08:08,-,-,-,-,2d 5h 37m,-,-,6d 23h 9m,0m,-,40m,-,-,-,1w 1d 0h 49m,-,1h 3m,-,8m,4m,-,0m,-,-,-,-,-,1M 1w 4d 5h 3m,-,-,1h 59m,-,-
+EPA-10269,Defect,Enhance Epic Analyzer Module,Will Not Implement,2025-02-28 11:44,-,-,-,0m,-,-,-,-,-,2d 17h 38m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4h 49m,-,1M 4w 2d 12h 28m
+EPA-93264,Task,Setup Epic Analyzer Project Structure,Completed,2025-02-27 08:16,-,-,-,1M 2w 1d 9h 38m,-,-,-,-,-,4h 56m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 4d 23h 50m,-,-
+EPA-23860,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-27 07:36,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 2w 5d 12h 47m,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 2h 17m,-,-
+EPA-32202,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-27 07:35,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 2w 5d 12h 46m,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 1d 2h 18m,-,-
+EPA-31141,Story,Enhance Epic Analyzer Module,Will Not Implement,2025-02-25 16:19,-,-,-,-,-,-,-,-,1m,-,-,-,-,-,-,-,4w 1d 0h 16m,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,1M 1w 0d 6h 5m
+EPA-16995,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-24 15:07,-,-,-,-,2d 2h 18m,-,-,2d 23h 30m,-,-,6h 7m,-,-,1M 2w 1d 22h 24m,-,-,-,-,21h 29m,1h 15m,-,-,-,-,-,-,-,1d 7h 38m,-,-,1w 6d 18h 52m,-,-
+EPA-85246,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-24 13:27,-,-,-,2M 0w 4d 13h 46m,-,-,-,-,-,1d 19h 27m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-13248,Sub-task,Implement Automated Test Coverage,Completed,2025-02-24 12:28,-,-,-,2M 0w 6d 7h 59m,-,-,-,-,-,2h 12m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-31883,Sub-task,Implement Automated Test Coverage,Completed,2025-02-24 12:28,-,-,-,2M 0w 6d 7h 59m,-,-,-,-,-,2h 13m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-27401,Epic,Enhance Epic Analyzer Module,Will Not Implement,2025-02-21 17:21,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 23h 27m,-,2M 0w 5d 5h 52m
+EPA-31437,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-21 13:29,-,-,-,-,1M 1w 6d 10h 54m,-,-,2w 1d 7h 13m,-,-,1h 15m,-,-,-,4d 18h 39m,-,-,-,1h 1m,4d 18h 34m,-,1d 0h 21m,-,-,-,-,-,23h 12m,-,-,2m,-,-
+EPA-27460,Sub-task,Implement Automated Test Coverage,Completed,2025-02-21 13:18,-,-,-,1M 1w 5d 10h 9m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3w 6d 23h 12m,-,-
+EPA-52509,Sub-task,Implement Automated Test Coverage,Completed,2025-02-21 13:18,-,-,-,2M 0w 4d 6h 49m,-,-,-,-,-,5d 2h 29m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4m,-,-
+EPA-98325,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-20 10:20,-,-,-,-,1M 3w 0d 15h 38m,-,-,3d 13h 31m,-,-,20h 40m,-,-,16h 14m,23h 59m,-,-,-,3d 23h 13m,22h 52m,-,-,-,-,-,-,-,1w 1d 19h 52m,-,-,21m,-,-
+EPA-31155,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-19 13:44,-,-,-,2M 0w 5d 10h 32m,-,-,-,-,-,5d 21h 31m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,54m,-,-
+EPA-20853,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-19 13:11,-,-,-,2M 0w 4d 8h 46m,-,-,-,-,-,1h 3m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,6d 23h 41m,-,-
+EPA-93663,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-19 13:10,-,-,-,2M 0w 4d 10h 13m,-,-,-,-,-,4h 11m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,6d 19h 5m,-,-
+EPA-48190,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-19 13:10,-,-,-,2M 0w 4d 14h 25m,-,-,-,-,-,4d 17h 42m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 1h 23m,-,-
+EPA-33276,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-19 13:10,-,-,-,2M 0w 4d 14h 25m,-,-,-,-,-,4d 17h 42m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 1h 23m,-,-
+EPA-21020,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-19 13:09,-,-,-,2M 0w 5d 10h 31m,-,-,-,-,-,1d 1h 13m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4d 21h 42m,5m,-,-
+EPA-25347,Sub-task,Implement Automated Test Coverage,Completed,2025-02-19 12:05,-,-,-,2M 0w 2d 11h 58m,-,-,-,-,-,16h 59m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 1d 5h 38m,-,-
+EPA-10436,Sub-task,Implement Automated Test Coverage,Completed,2025-02-19 12:04,-,-,-,2M 0w 3d 4h 56m,-,-,-,-,-,1w 1d 5h 38m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1m,-,-
+EPA-32462,Spike,Enhance Epic Analyzer Module,Completed,2025-02-19 10:26,-,-,-,2M 0w 5d 8h 55m,-,-,-,-,-,6h 20m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5d 20h 58m,-,-
+EPA-80568,Epic,Enhance Epic Analyzer Module,PAUSED,2025-02-18 15:14,-,-,-,-,-,-,-,-,-,-,-,-,2d 13h 25m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 1w 2d 18h 0m,-,-
+EPA-19655,Epic,Enhance Epic Analyzer Module,PAUSED,2025-02-18 15:14,-,-,-,-,-,-,-,-,-,-,-,-,2d 13h 25m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 1w 2d 18h 1m,-,-
+EPA-27295,Epic,Enhance Epic Analyzer Module,Researching,2025-02-18 15:13,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 1w 5d 7h 10m,-,-,-,-,16m,-,-
+EPA-32568,Epic,Enhance Epic Analyzer Module,PAUSED,2025-02-18 15:13,-,-,-,-,-,-,-,-,-,-,-,-,2d 13h 26m,-,-,-,-,-,-,-,-,-,-,-,-,2M 1w 2d 17h 44m,-,-,-,-,17m,-,-
+EPA-39381,Epic,Enhance Epic Analyzer Module,Released,2025-02-18 15:11,-,-,-,-,-,-,-,-,-,-,-,0m,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 11h 10m,2M 0w 1d 20h 0m,-,-,-,-,18m,-,-
+EPA-28010,Automation,Implement Automated Test Coverage,Completed,2025-02-18 11:47,-,-,-,1M 4w 0d 12h 40m,-,-,-,-,-,1w 4d 4h 4m,-,-,-,17h 31m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 0h 39m,-,-
+EPA-32049,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-18 10:08,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 1d 13h 39m,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 6d 5h 34m,-,3w 2d 17h 19m
+EPA-28133,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-18 10:08,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 1d 13h 39m,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 6d 5h 34m,-,3w 2d 17h 19m
+EPA-20731,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-18 10:07,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 1d 13h 39m,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 0w 6d 6h 30m,-,1w 0d 16h 24m
+EPA-21738,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-18 10:07,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4w 1d 13h 38m,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 0w 6d 6h 30m,-,1w 0d 16h 25m
+EPA-87154,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-18 09:27,-,-,-,-,2M 0w 6d 7h 13m,-,-,2d 4h 5m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4d 1h 35m,-,-,20m,-,-
+EPA-92795,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-17 12:53,-,-,-,-,2M 0w 4d 8h 8m,-,-,5h 0m,-,-,5h 35m,-,-,39m,3d 21h 26m,-,1d 0h 39m,-,18h 48m,20h 37m,-,-,-,-,-,-,-,3h 46m,-,-,1d 21h 9m,-,-
+EPA-11532,Story,Enhance Epic Analyzer Module,Will Not Implement,2025-02-17 12:48,-,-,-,-,0m,-,2m,-,-,-,-,-,-,-,-,-,5h 48m,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 22h 26m,-,2M 1w 4d 5h 36m
+EPA-25776,Sub-task,Implement Automated Test Coverage,Completed,2025-02-17 09:58,-,-,-,1M 3w 5d 14h 57m,-,-,-,-,-,18h 46m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 3d 2h 59m,-,-
+EPA-49789,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-17 09:57,-,-,-,1M 3w 0d 12h 45m,-,-,-,-,-,2w 6d 20h 4m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 3h 55m,-,-
+EPA-23839,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-17 09:53,-,-,-,1M 3w 5d 14h 58m,-,-,-,-,-,2w 1d 17h 51m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 3h 58m,-,-
+EPA-21123,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-17 09:51,-,-,-,1M 3w 5d 14h 58m,-,-,-,-,-,2w 3d 21h 51m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-18585,Technical Story,Enhance Epic Analyzer Module,To Do,2025-02-16 18:51,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 0d 3h 49m,-,-
+EPA-26207,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-14 14:47,-,-,-,-,2M 0w 6d 7h 13m,-,-,0m,-,-,2d 22h 59m,-,-,23h 21m,1d 1h 5m,-,-,-,44m,1d 19h 35m,-,-,-,-,-,-,-,5h 21m,-,-,2d 23h 35m,-,-
+EPA-19729,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-14 14:45,-,-,-,-,2M 1w 3d 8h 31m,-,-,0m,14m,-,-,-,-,-,2d 0h 36m,4h 0m,-,-,-,-,-,1h 32m,-,-,-,-,-,19h 51m,-,-,2d 21h 10m,-,-
+EPA-29436,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-14 06:55,-,-,-,-,2M 0w 6d 7h 13m,-,-,4d 1h 2m,-,-,1h 16m,-,-,1h 11m,0m,-,-,-,1h 1m,2h 12m,-,-,-,-,-,-,-,6d 1h 1m,-,-,48m,-,-
+EPA-48284,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-13 09:58,-,-,-,2M 2w 3d 7h 21m,-,-,-,-,-,2h 17m,-,-,-,14m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2h 49m,-,-
+EPA-17705,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-13 09:57,-,-,-,2M 2w 3d 10h 7m,-,-,-,-,-,1h 4m,-,-,-,1h 32m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-96516,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-13 09:48,-,-,-,-,2M 1w 2d 13h 59m,-,-,5h 34m,-,-,2d 22h 17m,-,-,-,-,-,-,-,20h 0m,1d 0h 30m,-,-,-,-,-,-,-,2d 22h 31m,-,-,1m,-,-
+EPA-10504,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-12 17:27,-,-,-,-,2M 0w 4d 8h 46m,-,-,1d 1h 22m,-,-,-,-,-,-,-,-,6d 19h 36m,-,-,-,-,33m,-,-,-,-,-,5d 22h 55m,-,-,2m,-,-
+EPA-28870,Story,Enhance Epic Analyzer Module,To Do,2025-02-12 17:24,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 5h 16m,-,-
+EPA-20148,Story,Enhance Epic Analyzer Module,To Do,2025-02-12 17:24,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 5h 16m,-,-
+EPA-41106,Story,Enhance Epic Analyzer Module,To Do,2025-02-12 17:23,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 5h 16m,-,-
+EPA-26111,Story,Enhance Epic Analyzer Module,To Do,2025-02-12 17:23,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 5h 17m,-,-
+EPA-41316,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-12 17:15,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 5h 15m,-,-,-,-,-,-,-,-,-,-,-,-,-,9m,-,-
+EPA-31415,Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-12 17:14,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 5h 16m,-,-,-,-,-,-,-,-,-,-,-,-,-,10m,-,-
+EPA-24187,Story,Enhance Epic Analyzer Module,To Do,2025-02-12 17:06,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 5h 34m,-,-
+EPA-26001,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-12 16:54,-,-,-,-,2w 3d 10h 13m,-,-,2d 9h 22m,-,-,1d 5h 3m,-,-,5d 15h 10m,4d 19h 38m,-,4w 0d 20h 37m,-,6d 23h 50m,48m,-,-,-,-,-,-,-,4d 20h 35m,-,-,1w 0d 0h 29m,-,-
+EPA-87261,Automation,Enhance Epic Analyzer Module,Completed,2025-02-12 16:45,-,-,-,2M 2w 2d 9h 51m,-,-,-,-,-,1d 19h 51m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,13m,-,-
+EPA-27621,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-12 16:45,-,-,-,-,2w 3d 10h 13m,-,-,1w 2d 22h 27m,-,-,4d 19h 9m,-,-,3d 2h 40m,1w 2d 1h 53m,-,1w 6d 17h 41m,-,1w 2d 5h 49m,1h 1m,-,-,-,-,-,-,-,4d 20h 33m,-,-,1w 0d 0h 29m,-,-
+EPA-15257,Story,Enhance Epic Analyzer Module,To Do,2025-02-12 16:40,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 6h 0m,-,-
+EPA-81384,Technical Story,Fix SLA Breach Alert Issue,To Do,2025-02-12 16:18,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 2w 4d 6h 22m,-,-
+EPA-32853,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-12 15:01,-,-,-,-,2w 1d 6h 44m,-,-,6d 7h 57m,-,-,3d 2h 53m,-,-,1w 1d 18h 51m,3w 4d 21h 34m,-,2w 1d 20h 36m,-,2d 23h 21m,23h 3m,-,-,-,-,-,-,-,2h 41m,-,-,0m,-,-
+EPA-34240,Spike,Enhance Epic Analyzer Module,Completed,2025-02-12 14:53,-,-,-,1M 3w 0d 12h 32m,-,-,-,-,-,1w 5d 0h 48m,-,-,-,-,-,-,21h 52m,-,-,-,-,-,-,-,-,-,-,-,-,-,2w 0d 20h 35m,-,-
+EPA-31413,Story,Configure SLA Review Template,Deployed to production,2025-02-12 13:42,-,-,-,-,1w 4d 14h 30m,-,-,1w 1d 2h 26m,4d 23h 9m,-,-,-,-,21h 31m,4d 23h 55m,-,4d 21h 10m,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 1w 6d 22h 17m,-,-
+EPA-80729,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-12 13:00,-,-,-,-,2M 2w 3d 8h 30m,-,-,0m,-,-,17h 55m,-,-,-,-,-,-,-,43m,1h 35m,-,1h 2m,-,-,-,-,-,2h 18m,-,-,1h 38m,-,-
+EPA-33608,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-12 09:48,-,-,-,2M 2w 3d 16h 30m,-,-,-,-,-,17m,-,-,-,20h 5m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,-
+EPA-58697,Sub-task,Configure SLA Review Template,Completed,2025-02-12 09:47,-,-,-,2M 1w 3d 11h 56m,-,-,-,-,-,1w 0d 22h 32m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2h 25m,0m,-,-
+EPA-24380,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-11 13:59,-,-,-,-,2M 1w 2d 13h 59m,-,-,0m,-,-,1h 9m,-,-,0m,-,-,-,-,22h 8m,5d 16h 0m,-,-,-,-,-,-,-,2d 22h 32m,-,-,4h 53m,-,-
+EPA-32691,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-11 12:43,-,-,-,-,2M 1w 2d 13h 59m,-,-,15m,-,-,2d 3h 22m,-,-,16m,-,-,-,-,-,3d 21h 23m,-,-,-,-,-,-,-,3d 18h 37m,-,-,4m,-,-
+EPA-27583,Story,Configure SLA Review Template,Deployed to production,2025-02-11 11:15,-,-,-,-,2M 0w 2d 9h 17m,-,-,23h 33m,-,5d 0h 30m,6h 8m,-,-,-,-,-,-,-,23h 19m,1h 21m,-,-,-,-,-,-,-,1w 1d 22h 27m,-,-,20h 49m,-,-
+EPA-30324,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-11 09:49,-,-,-,-,2M 1w 2d 13h 59m,-,-,21h 44m,-,-,9h 41m,-,-,17h 7m,6h 24m,-,-,-,2d 18h 21m,23h 6m,-,-,-,-,-,-,-,3d 22h 29m,-,-,0m,-,-
+EPA-70897,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-10 19:59,-,-,-,-,2M 1w 2d 13h 59m,-,-,20h 59m,-,-,1d 9h 49m,-,-,-,-,-,-,-,3d 17h 47m,-,-,-,-,-,-,-,-,3d 22h 29m,-,-,13h 37m,-,-
+EPA-12886,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-10 19:43,-,-,-,-,2M 1w 2d 13h 59m,-,-,21h 9m,-,-,2d 6h 15m,-,-,-,-,-,-,-,2d 21h 11m,-,-,-,-,-,-,-,-,3d 22h 29m,-,-,13h 52m,-,-
+EPA-79672,Bug,Enhance Epic Analyzer Module,Will Not Implement,2025-02-10 18:26,-,-,-,-,-,-,-,3w 1d 1h 26m,-,-,0m,-,-,-,14h 16m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-,1M 4w 0d 12h 31m
+EPA-20743,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 16:24,-,-,-,-,1M 0w 1d 12h 24m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 3w 1d 18h 30m,1d 23h 22m,-
+EPA-41105,Bug,Enhance Epic Analyzer Module,Done,2025-02-05 20:59,-,-,-,-,-,2M 2w 6d 4h 18m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 2h 36m,1d 18h 47m,-
+EPA-28716,Sub-task,Implement Automated Test Coverage,Completed,2025-02-10 11:35,-,-,-,2M 1w 3d 10h 12m,-,-,-,-,-,37m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 0h 16m,-,-
+EPA-70943,Sub-task,Implement Automated Test Coverage,Completed,2025-02-10 11:35,-,-,-,2M 1w 4d 10h 18m,-,-,-,-,-,12m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 2d 0h 35m,-,-
+EPA-29107,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-10 11:34,-,-,-,2M 1w 4d 10h 12m,-,-,-,-,-,2d 0h 12m,-,-,-,6m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 0d 0h 36m,-,-
+EPA-26547,Sub-task,Implement Automated Test Coverage,Completed,2025-02-10 11:34,-,-,-,2M 1w 6d 10h 30m,-,-,-,-,-,2d 21h 27m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,4d 3h 10m,-,-
+EPA-28577,Sub-task,Implement Automated Test Coverage,Completed,2025-02-10 11:33,-,-,-,2M 1w 3d 10h 7m,-,-,-,-,-,42m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 3d 0h 19m,-,-
+EPA-10955,Sub-task,Implement Automated Test Coverage,Completed,2025-02-10 11:32,-,-,-,2M 1w 4d 12h 15m,-,-,-,-,-,18h 2m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 1d 4h 50m,-,-
+EPA-26391,Sub-task,Enhance Epic Analyzer Module,Completed,2025-02-10 11:32,-,-,-,2M 1w 4d 10h 10m,-,-,-,-,-,1d 3h 29m,-,-,-,20h 7m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 0d 1h 21m,-,-
+EPA-22445,Sub-task,Implement Automated Test Coverage,Completed,2025-02-10 11:31,-,-,-,2M 1w 6d 9h 47m,-,-,-,-,-,6d 0h 1m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1d 1h 21m,-,-
+EPA-18326,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-10 10:13,-,-,-,-,2M 0w 6d 7h 14m,-,-,6d 0h 47m,-,-,1h 4m,-,-,2d 2h 19m,-,-,20h 2m,-,3d 22h 57m,21h 13m,-,0m,-,-,-,-,-,5h 20m,-,-,3h 31m,-,-
+EPA-65149,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-06 15:18,-,-,-,-,2M 2w 4d 11h 55m,-,-,5h 8m,18h 49m,-,-,-,-,-,-,-,16h 18m,-,-,-,-,-,-,-,-,-,-,-,-,-,3d 3h 5m,1d 0h 7m,-
+EPA-24103,Bug,Fix SLA Breach Alert Issue,Will Not Implement,2025-02-07 12:26,-,1h 49m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1h 14m,-,-,-,-,-,-,-,-,-,-,0m,2M 3w 2d 7h 12m
+EPA-33989,Story,Enhance Epic Analyzer Module,Will Not Implement,2025-02-07 11:28,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,5d 0h 44m,3h 57m,2M 2w 4d 6h 30m
+EPA-23083,Technical Story,Enhance Epic Analyzer Module,Ready for refinement,2025-02-05 14:39,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2M 3w 2d 7h 10m,-,-,-,-,-,-,2d 0h 49m,-,-,-,-,-,-,-,2m,-
+EPA-81262,Technical Story,Enhance Epic Analyzer Module,Will Not Implement,2025-02-05 14:35,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1M 2w 3d 1h 13m,-,-,-,-,-,-,2d 0h 49m,-,-,-,-,-,-,-,6m,1M 1w 0d 5h 58m
+EPA-30220,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 13:28,-,-,1h 51m,-,2M 2w 3d 14h 47m,-,-,-,-,30m,-,-,-,-,-,-,-,22h 31m,3d 1h 58m,-,1d 1h 3m,-,-,-,-,-,-,2d 14h 26m,-,1m,-,5m,-
+EPA-25565,Sub-task,Implement Automated Test Coverage,Will Not Implement,2025-02-05 12:31,-,1d 5h 13m,-,-,-,-,-,-,-,21h 44m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,2M 3w 2d 7h 12m
+EPA-23645,Sub-task,Implement Automated Test Coverage,Completed,2025-02-05 10:35,-,-,-,2M 1w 6d 11h 12m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,1w 2d 20h 3m,2d 4h 50m,-
+EPA-23342,Sub-task,Implement Automated Test Coverage,Completed,2025-02-05 10:35,-,-,-,2M 1w 6d 11h 12m,-,-,-,-,-,1w 5d 0h 53m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-
+EPA-24768,Bug,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 10:33,-,-,-,-,2M 0w 4d 8h 8m,-,-,1d 4h 54m,-,-,2h 17m,-,-,17h 33m,6d 22h 8m,-,1w 2d 18h 45m,-,10m,3h 20m,-,-,-,2d 4h 56m,-,-,-,1h 55m,-,-,-,0m,-
+EPA-27932,Sub-task,Implement Automated Test Coverage,Completed,2025-02-05 10:29,-,-,-,2M 3w 2d 8h 43m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 0h 4m,-,3h 24m,-
+EPA-11046,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 10:17,-,-,1m,-,2M 1w 2d 13h 59m,-,-,-,-,-,3d 0h 31m,-,-,1d 14h 7m,-,-,-,-,7h 18m,35m,2h 21m,-,-,14m,-,-,-,1w 1d 18h 43m,2d 2h 17m,-,-,17m,-
+EPA-27657,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 10:15,-,-,-,-,2M 2w 3d 14h 47m,-,-,-,-,2h 59m,30m,-,-,-,-,-,-,-,3d 1h 29m,-,1d 1h 36m,-,-,26m,-,-,-,2d 14h 26m,22h 39m,1h 25m,-,6m,-
+EPA-19068,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 10:13,-,-,-,-,2M 1w 2d 14h 0m,-,-,2d 23h 49m,-,1d 3h 24m,21h 53m,-,-,17h 28m,-,-,-,-,7h 18m,-,-,-,-,11m,-,-,-,1w 1d 18h 43m,1d 1h 21m,-,-,21m,-
+EPA-19300,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 09:55,-,-,1h 28m,-,2M 2w 3d 14h 48m,-,-,-,-,6m,-,-,-,-,-,-,-,1h 38m,3d 1h 56m,-,4h 32m,-,-,35m,-,-,-,2d 14h 27m,1d 20h 59m,2m,-,14m,-
+EPA-14656,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-05 09:36,-,-,-,-,2M 1w 2d 14h 0m,-,-,4d 14h 42m,-,2h 24m,1d 0h 17m,-,-,8h 7m,0m,-,2d 0h 0m,-,2h 41m,3d 21h 3m,-,-,-,1h 10m,-,-,-,1d 18h 21m,2d 2h 19m,-,-,0m,-
+EPA-20829,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-04 13:44,-,-,-,-,2M 1w 3d 8h 31m,-,-,4h 11m,38m,-,4d 21h 49m,-,-,-,5d 18h 33m,3h 30m,-,-,-,1d 0h 30m,-,1h 40m,-,3m,-,-,-,19h 52m,3d 1h 39m,-,-,1m,-
+EPA-28226,Technical Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-04 13:43,-,-,-,-,2M 1w 3d 8h 31m,-,-,1w 0d 0h 6m,42m,1d 5h 0m,1d 23h 38m,-,-,-,-,3h 30m,-,-,-,2d 21h 17m,-,1h 35m,-,2m,-,-,-,19h 51m,1d 20h 41m,-,-,4m,-
+EPA-24806,Story,Enhance Epic Analyzer Module,Deployed to production,2025-02-04 12:02,-,-,-,-,2M 0w 3d 11h 5m,-,-,8m,-,-,2h 34m,-,-,2h 12m,6d 21h 22m,-,1w 2d 18h 45m,-,2d 20h 9m,1h 10m,-,-,-,3d 2h 33m,-,-,-,1h 47m,-,-,-,55m,-
+EPA-94038,Bug,Fix SLA Breach Alert Issue,Deployed to production,2025-02-04 11:18,-,-,-,-,2M 3w 2d 7h 11m,-,-,-,-,13h 52m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,2d 3h 49m,-,-,-,-,3h 32m,-,6h 57m,-
+EPA-69556,Sub-task,Implement Automated Test Coverage,Completed,2025-02-04 09:32,-,-,-,2M 3w 5d 6h 17m,-,-,-,-,-,6h 51m,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,-,0m,-
+EPA-15968,Task,Enhance Epic Analyzer Module,Done,2025-02-03 15:01,-,-,18h 18m,-,-,2M 2w 6d 16h 7m,-,-,-,23h 26m,-,-,-,-,-,-,-,2d 6h 44m,-,-,-,-,-,-,-,-,0m,-,-,2d 15h 4m,-,1m,-
