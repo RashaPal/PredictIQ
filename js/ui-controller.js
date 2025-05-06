@@ -11,7 +11,7 @@ class UIController {
     
     // Pagination state
     this.currentPage = 1;
-    this.rowsPerPage = 20; // Default
+    this.rowsPerPage = 10; // Default
     
     // Debug mode
     this.debugMode = true;
