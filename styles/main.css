@@ -1377,3 +1377,107 @@ tr.clickable-row:hover {
   color: var(--light-text);
   opacity: 0.5;
 }
+
+
+/* Updated button styling for the demo data button */
+
+.action-buttons {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Primary analyze button */
+.primary-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: all 0.2s ease;
+  min-width: 150px;
+  justify-content: center;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Demo data button - distinct look */
+#demoDataBtn {
+  background-color: #6554c0; /* Purple color */
+  color: white;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: all 0.2s ease;
+  min-width: 150px;
+  justify-content: center;
+}
+
+#demoDataBtn:hover {
+  background-color: #5344aa;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#demoDataBtn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Reset button */
+.secondary-btn {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  transition: all 0.2s ease;
+  min-width: 150px;
+  justify-content: center;
+}
+
+.secondary-btn:hover {
+  background-color: var(--secondary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Make buttons more responsive */
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .primary-btn, #demoDataBtn, .secondary-btn {
+    width: 100%;
+    min-width: unset;
+  }
+}
