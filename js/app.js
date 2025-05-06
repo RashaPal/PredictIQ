@@ -205,7 +205,7 @@ class JiraEpicAnalyzer {
   
   /**
    * Load and process demo data directly from embedded data
-   */
+  
   loadDemoData() {
     // Clear previous errors and show loading
     ErrorHandler.clear();
@@ -289,6 +289,7 @@ class JiraEpicAnalyzer {
       Utils.hideLoading();
     }
   }
+   */
   
   /**
    * Creates demo data for main Jira export directly as an object
@@ -721,7 +722,6 @@ class JiraEpicAnalyzer {
       console.error('Reanalysis error:', error);
     }
   }
-
   /**
  * Load and process demo data from the repository
  */
